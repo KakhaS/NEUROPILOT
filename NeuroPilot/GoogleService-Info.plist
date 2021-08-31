@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>706003390026-doq1gjoreb32alg60i479c2fkboj73cv.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.706003390026-doq1gjoreb32alg60i479c2fkboj73cv</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDjbu3J2kUoe_L_aYKgb9iWdMBWiHCM1-I</string>
+	<key>GCM_SENDER_ID</key>
+	<string>706003390026</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>kakha.NeuroPilot</string>
+	<key>PROJECT_ID</key>
+	<string>neuropilot-763fd</string>
+	<key>STORAGE_BUCKET</key>
+	<string>neuropilot-763fd.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:706003390026:ios:bd3136b705bf6876ff60b3</string>
+</dict>
+</plist>

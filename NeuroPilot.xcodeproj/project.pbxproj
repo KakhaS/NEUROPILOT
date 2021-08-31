@@ -1,0 +1,452 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		25AE2029FB6196822543BEC8 /* Pods_NeuroPilot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA5D2B48F69B2F714F0045AD /* Pods_NeuroPilot.framework */; };
+		BC33E2B226DD50EA00520B84 /* credentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = BC33E2B126DD50EA00520B84 /* credentials.plist */; };
+		BCEEE93F26DE207D00C46AC8 /* registerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEEE93E26DE207D00C46AC8 /* registerViewController.swift */; };
+		BCF84CE026D14A1F00DC6691 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF84CDF26D14A1F00DC6691 /* AppDelegate.swift */; };
+		BCF84CE226D14A1F00DC6691 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF84CE126D14A1F00DC6691 /* SceneDelegate.swift */; };
+		BCF84CE426D14A1F00DC6691 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF84CE326D14A1F00DC6691 /* loginViewController.swift */; };
+		BCF84CE726D14A1F00DC6691 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCF84CE526D14A1F00DC6691 /* Main.storyboard */; };
+		BCF84CE926D14A2000DC6691 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCF84CE826D14A2000DC6691 /* Assets.xcassets */; };
+		BCF84CEC26D14A2000DC6691 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCF84CEA26D14A2000DC6691 /* LaunchScreen.storyboard */; };
+		BCF84CF426D14A8200DC6691 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BCF84CF326D14A8200DC6691 /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5DF957FCA12361BFB519DDE3 /* Pods-NeuroPilot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeuroPilot.release.xcconfig"; path = "Target Support Files/Pods-NeuroPilot/Pods-NeuroPilot.release.xcconfig"; sourceTree = "<group>"; };
+		BA5D2B48F69B2F714F0045AD /* Pods_NeuroPilot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NeuroPilot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC33E2B126DD50EA00520B84 /* credentials.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = credentials.plist; sourceTree = "<group>"; };
+		BCEEE93E26DE207D00C46AC8 /* registerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerViewController.swift; sourceTree = "<group>"; };
+		BCF84CDC26D14A1F00DC6691 /* NeuroPilot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeuroPilot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCF84CDF26D14A1F00DC6691 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BCF84CE126D14A1F00DC6691 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BCF84CE326D14A1F00DC6691 /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
+		BCF84CE626D14A1F00DC6691 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BCF84CE826D14A2000DC6691 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BCF84CEB26D14A2000DC6691 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BCF84CED26D14A2000DC6691 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCF84CF326D14A8200DC6691 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E61C48BA0FB684A3E7096039 /* Pods-NeuroPilot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeuroPilot.debug.xcconfig"; path = "Target Support Files/Pods-NeuroPilot/Pods-NeuroPilot.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BCF84CD926D14A1E00DC6691 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25AE2029FB6196822543BEC8 /* Pods_NeuroPilot.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09458CEF7523F9CFC75DB61D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E61C48BA0FB684A3E7096039 /* Pods-NeuroPilot.debug.xcconfig */,
+				5DF957FCA12361BFB519DDE3 /* Pods-NeuroPilot.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		78080EC32A7B80319B186CA7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA5D2B48F69B2F714F0045AD /* Pods_NeuroPilot.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BCF84CD326D14A1E00DC6691 = {
+			isa = PBXGroup;
+			children = (
+				BCF84CDE26D14A1F00DC6691 /* NeuroPilot */,
+				BCF84CDD26D14A1F00DC6691 /* Products */,
+				09458CEF7523F9CFC75DB61D /* Pods */,
+				78080EC32A7B80319B186CA7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BCF84CDD26D14A1F00DC6691 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BCF84CDC26D14A1F00DC6691 /* NeuroPilot.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BCF84CDE26D14A1F00DC6691 /* NeuroPilot */ = {
+			isa = PBXGroup;
+			children = (
+				BCF84CDF26D14A1F00DC6691 /* AppDelegate.swift */,
+				BCF84CE126D14A1F00DC6691 /* SceneDelegate.swift */,
+				BCF84CE326D14A1F00DC6691 /* loginViewController.swift */,
+				BCEEE93E26DE207D00C46AC8 /* registerViewController.swift */,
+				BCF84CE526D14A1F00DC6691 /* Main.storyboard */,
+				BCF84CE826D14A2000DC6691 /* Assets.xcassets */,
+				BCF84CEA26D14A2000DC6691 /* LaunchScreen.storyboard */,
+				BCF84CED26D14A2000DC6691 /* Info.plist */,
+				BCF84CF326D14A8200DC6691 /* GoogleService-Info.plist */,
+				BC33E2B126DD50EA00520B84 /* credentials.plist */,
+			);
+			path = NeuroPilot;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BCF84CDB26D14A1E00DC6691 /* NeuroPilot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCF84CF026D14A2000DC6691 /* Build configuration list for PBXNativeTarget "NeuroPilot" */;
+			buildPhases = (
+				A87583902C9D6D741AEE0287 /* [CP] Check Pods Manifest.lock */,
+				BCF84CD826D14A1E00DC6691 /* Sources */,
+				BCF84CD926D14A1E00DC6691 /* Frameworks */,
+				BCF84CDA26D14A1E00DC6691 /* Resources */,
+				7E2556979C3AFC1B7A549297 /* [CP] Embed Pods Frameworks */,
+				8667F41DDDF7F1B37DF17153 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NeuroPilot;
+			productName = NeuroPilot;
+			productReference = BCF84CDC26D14A1F00DC6691 /* NeuroPilot.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BCF84CD426D14A1E00DC6691 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					BCF84CDB26D14A1E00DC6691 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = BCF84CD726D14A1E00DC6691 /* Build configuration list for PBXProject "NeuroPilot" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BCF84CD326D14A1E00DC6691;
+			productRefGroup = BCF84CDD26D14A1F00DC6691 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BCF84CDB26D14A1E00DC6691 /* NeuroPilot */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BCF84CDA26D14A1E00DC6691 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCF84CEC26D14A2000DC6691 /* LaunchScreen.storyboard in Resources */,
+				BCF84CF426D14A8200DC6691 /* GoogleService-Info.plist in Resources */,
+				BC33E2B226DD50EA00520B84 /* credentials.plist in Resources */,
+				BCF84CE926D14A2000DC6691 /* Assets.xcassets in Resources */,
+				BCF84CE726D14A1F00DC6691 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7E2556979C3AFC1B7A549297 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NeuroPilot/Pods-NeuroPilot-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NeuroPilot/Pods-NeuroPilot-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NeuroPilot/Pods-NeuroPilot-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8667F41DDDF7F1B37DF17153 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NeuroPilot/Pods-NeuroPilot-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NeuroPilot/Pods-NeuroPilot-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NeuroPilot/Pods-NeuroPilot-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A87583902C9D6D741AEE0287 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NeuroPilot-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BCF84CD826D14A1E00DC6691 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCF84CE426D14A1F00DC6691 /* loginViewController.swift in Sources */,
+				BCF84CE026D14A1F00DC6691 /* AppDelegate.swift in Sources */,
+				BCF84CE226D14A1F00DC6691 /* SceneDelegate.swift in Sources */,
+				BCEEE93F26DE207D00C46AC8 /* registerViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BCF84CE526D14A1F00DC6691 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCF84CE626D14A1F00DC6691 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BCF84CEA26D14A2000DC6691 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCF84CEB26D14A2000DC6691 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BCF84CEE26D14A2000DC6691 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BCF84CEF26D14A2000DC6691 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BCF84CF126D14A2000DC6691 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E61C48BA0FB684A3E7096039 /* Pods-NeuroPilot.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JBZ7YJVWA2;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
+				INFOPLIST_FILE = NeuroPilot/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kakha.NeuroPilot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		BCF84CF226D14A2000DC6691 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DF957FCA12361BFB519DDE3 /* Pods-NeuroPilot.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JBZ7YJVWA2;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
+				INFOPLIST_FILE = NeuroPilot/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kakha.NeuroPilot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BCF84CD726D14A1E00DC6691 /* Build configuration list for PBXProject "NeuroPilot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCF84CEE26D14A2000DC6691 /* Debug */,
+				BCF84CEF26D14A2000DC6691 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCF84CF026D14A2000DC6691 /* Build configuration list for PBXNativeTarget "NeuroPilot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCF84CF126D14A2000DC6691 /* Debug */,
+				BCF84CF226D14A2000DC6691 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BCF84CD426D14A1E00DC6691 /* Project object */;
+}
