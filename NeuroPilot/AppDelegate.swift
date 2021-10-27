@@ -21,6 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if(GIDSignIn.sharedInstance().hasPreviousSignIn()) {
               GIDSignIn.sharedInstance()?.restorePreviousSignIn()
           }
+        
         return true
     }
 

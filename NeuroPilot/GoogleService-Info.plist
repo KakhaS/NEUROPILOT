@@ -13,21 +13,21 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>kakha.NeuroPilot</string>
+	<string>kakha.NeuroPilot1</string>
 	<key>PROJECT_ID</key>
 	<string>neuropilot-763fd</string>
 	<key>STORAGE_BUCKET</key>
 	<string>neuropilot-763fd.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
-	<false></false>
+	<false/>
 	<key>IS_ANALYTICS_ENABLED</key>
-	<false></false>
+	<false/>
 	<key>IS_APPINVITE_ENABLED</key>
-	<true></true>
+	<false/>
 	<key>IS_GCM_ENABLED</key>
-	<true></true>
+	<false/>
 	<key>IS_SIGNIN_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>GOOGLE_APP_ID</key>
 	<string>1:706003390026:ios:bd3136b705bf6876ff60b3</string>
 </dict>

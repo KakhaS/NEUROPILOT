@@ -8,31 +8,146 @@
 
 /* Begin PBXBuildFile section */
 		25AE2029FB6196822543BEC8 /* Pods_NeuroPilot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA5D2B48F69B2F714F0045AD /* Pods_NeuroPilot.framework */; };
+		BC15BEE927043CCF005CA03F /* loginOrRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC15BEE827043CCF005CA03F /* loginOrRegisterViewController.swift */; };
+		BC15BEEE27043D80005CA03F /* startTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC15BEED27043D80005CA03F /* startTestViewController.swift */; };
+		BC15BEF027043DE6005CA03F /* QuestionsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC15BEEF27043DE6005CA03F /* QuestionsPageViewController.swift */; };
+		BC15BEF327043E96005CA03F /* loginViaUsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC15BEF227043E96005CA03F /* loginViaUsernameViewController.swift */; };
+		BC2846192711E8CC0078308F /* EmotionalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2846182711E8CC0078308F /* EmotionalViewController.swift */; };
+		BC28461B2711EEEE0078308F /* PhysicalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC28461A2711EEEE0078308F /* PhysicalViewController.swift */; };
+		BC33B7BC26EBC58E00912CC6 /* onboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC33B7BB26EBC58E00912CC6 /* onboardingViewController.swift */; };
+		BC33B7C026EBCBBE00912CC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC33B7BF26EBCBBE00912CC6 /* Assets.xcassets */; };
 		BC33E2B226DD50EA00520B84 /* credentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = BC33E2B126DD50EA00520B84 /* credentials.plist */; };
+		BC3599B326EE11F6004BF358 /* forgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3599B226EE11F6004BF358 /* forgotPasswordViewController.swift */; };
+		BC4390AF270616190020CBF7 /* FirstTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4390AE270616180020CBF7 /* FirstTaskViewController.swift */; };
+		BC583BF62703877A00FE5742 /* tableViewClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC583BF52703877A00FE5742 /* tableViewClass.swift */; };
+		BC5B9AC126E285C800DCA491 /* firstPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5B9AC026E285C800DCA491 /* firstPageViewController.swift */; };
+		BC5CE50427258F0A00259E26 /* FiraGO-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = BC5CE50327258F0900259E26 /* FiraGO-Regular.otf */; };
+		BC5CE50727258F3900259E26 /* FiraGO-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = BC5CE50627258F3900259E26 /* FiraGO-SemiBold.otf */; };
+		BC5CFC752709DB8E00AB1825 /* ProblemExchangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5CFC742709DB8D00AB1825 /* ProblemExchangeViewController.swift */; };
+		BC6BA4A826E3BBD500DAC918 /* profileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6BA4A726E3BBD400DAC918 /* profileViewController.swift */; };
+		BC75942E27285F180072807A /* 11.json in Resources */ = {isa = PBXBuildFile; fileRef = BC75941E27285F140072807A /* 11.json */; };
+		BC75942F27285F180072807A /* 13..json in Resources */ = {isa = PBXBuildFile; fileRef = BC75941F27285F140072807A /* 13..json */; };
+		BC75943027285F180072807A /* 14..json in Resources */ = {isa = PBXBuildFile; fileRef = BC75942027285F150072807A /* 14..json */; };
+		BC75943127285F180072807A /* 7..json in Resources */ = {isa = PBXBuildFile; fileRef = BC75942127285F150072807A /* 7..json */; };
+		BC75943227285F180072807A /* 8.json in Resources */ = {isa = PBXBuildFile; fileRef = BC75942227285F150072807A /* 8.json */; };
+		BC75943327285F180072807A /* 6..json in Resources */ = {isa = PBXBuildFile; fileRef = BC75942327285F150072807A /* 6..json */; };
+		BC75943427285F180072807A /* 4.json in Resources */ = {isa = PBXBuildFile; fileRef = BC75942427285F160072807A /* 4.json */; };
+		BC75943527285F180072807A /* 9..json in Resources */ = {isa = PBXBuildFile; fileRef = BC75942527285F160072807A /* 9..json */; };
+		BC75943627285F180072807A /* 16.json in Resources */ = {isa = PBXBuildFile; fileRef = BC75942627285F160072807A /* 16.json */; };
+		BC75943727285F180072807A /* 5.json in Resources */ = {isa = PBXBuildFile; fileRef = BC75942727285F170072807A /* 5.json */; };
+		BC75943827285F180072807A /* 2.json in Resources */ = {isa = PBXBuildFile; fileRef = BC75942827285F170072807A /* 2.json */; };
+		BC75943927285F180072807A /* 12.json in Resources */ = {isa = PBXBuildFile; fileRef = BC75942927285F170072807A /* 12.json */; };
+		BC75943A27285F180072807A /* 10..json in Resources */ = {isa = PBXBuildFile; fileRef = BC75942A27285F170072807A /* 10..json */; };
+		BC75943B27285F180072807A /* 3.json in Resources */ = {isa = PBXBuildFile; fileRef = BC75942B27285F180072807A /* 3.json */; };
+		BC75943C27285F180072807A /* 15..json in Resources */ = {isa = PBXBuildFile; fileRef = BC75942C27285F180072807A /* 15..json */; };
+		BC75943D27285F180072807A /* 17..json in Resources */ = {isa = PBXBuildFile; fileRef = BC75942D27285F180072807A /* 17..json */; };
+		BC75944C272882E50072807A /* 21..json in Resources */ = {isa = PBXBuildFile; fileRef = BC75943F272882E10072807A /* 21..json */; };
+		BC75944D272882E50072807A /* 26.json in Resources */ = {isa = PBXBuildFile; fileRef = BC759440272882E20072807A /* 26.json */; };
+		BC75944E272882E50072807A /* 19.json in Resources */ = {isa = PBXBuildFile; fileRef = BC759441272882E20072807A /* 19.json */; };
+		BC75944F272882E50072807A /* 18.json in Resources */ = {isa = PBXBuildFile; fileRef = BC759442272882E20072807A /* 18.json */; };
+		BC759450272882E50072807A /* 20.json in Resources */ = {isa = PBXBuildFile; fileRef = BC759443272882E30072807A /* 20.json */; };
+		BC759451272882E50072807A /* 22.json in Resources */ = {isa = PBXBuildFile; fileRef = BC759444272882E30072807A /* 22.json */; };
+		BC759452272882E50072807A /* 24.json in Resources */ = {isa = PBXBuildFile; fileRef = BC759445272882E30072807A /* 24.json */; };
+		BC759453272882E50072807A /* 23..json in Resources */ = {isa = PBXBuildFile; fileRef = BC759446272882E30072807A /* 23..json */; };
+		BC759454272882E50072807A /* 29..json in Resources */ = {isa = PBXBuildFile; fileRef = BC759447272882E40072807A /* 29..json */; };
+		BC759455272882E50072807A /* 28.json in Resources */ = {isa = PBXBuildFile; fileRef = BC759448272882E40072807A /* 28.json */; };
+		BC759456272882E50072807A /* 25..json in Resources */ = {isa = PBXBuildFile; fileRef = BC759449272882E40072807A /* 25..json */; };
+		BC759457272882E50072807A /* 27.json in Resources */ = {isa = PBXBuildFile; fileRef = BC75944A272882E50072807A /* 27.json */; };
+		BC759458272882E50072807A /* 30..json in Resources */ = {isa = PBXBuildFile; fileRef = BC75944B272882E50072807A /* 30..json */; };
+		BC87500B2700ACB2006B7834 /* fetchName.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC87500A2700ACB2006B7834 /* fetchName.swift */; };
+		BC87501027022954006B7834 /* taskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC87500F27022954006B7834 /* taskViewController.swift */; };
+		BCA56CA127270C4E00780883 /* 1.json in Resources */ = {isa = PBXBuildFile; fileRef = BCA56CA027270C4E00780883 /* 1.json */; };
+		BCA56CA32727136300780883 /* beforeSession.json in Resources */ = {isa = PBXBuildFile; fileRef = BCA56CA22727136200780883 /* beforeSession.json */; };
+		BCB8C5DB26FBA4D200E00BB4 /* DemoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB8C5D926FBA4D200E00BB4 /* DemoTableViewCell.swift */; };
+		BCB8C5DC26FBA4D200E00BB4 /* DemoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCB8C5DA26FBA4D200E00BB4 /* DemoTableViewCell.xib */; };
+		BCC2341E2719F2E70032EB22 /* BankPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC2341D2719F2E70032EB22 /* BankPageViewController.swift */; };
+		BCC23420271A019C0032EB22 /* 79952-successful.json in Resources */ = {isa = PBXBuildFile; fileRef = BCC2341F271A019C0032EB22 /* 79952-successful.json */; };
+		BCED66B52718993600D8D184 /* SaleItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCED66B42718993600D8D184 /* SaleItemsViewController.swift */; };
+		BCED66C02718AD6600D8D184 /* DemoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCED66BE2718AD6600D8D184 /* DemoCollectionViewCell.swift */; };
+		BCED66C12718AD6600D8D184 /* DemoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCED66BF2718AD6600D8D184 /* DemoCollectionViewCell.xib */; };
 		BCEEE93F26DE207D00C46AC8 /* registerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEEE93E26DE207D00C46AC8 /* registerViewController.swift */; };
+		BCF17E94271F379B00F82F18 /* SessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF17E93271F379B00F82F18 /* SessionViewController.swift */; };
+		BCF17E97271F412400F82F18 /* SessionSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF17E96271F412400F82F18 /* SessionSecondViewController.swift */; };
 		BCF84CE026D14A1F00DC6691 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF84CDF26D14A1F00DC6691 /* AppDelegate.swift */; };
 		BCF84CE226D14A1F00DC6691 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF84CE126D14A1F00DC6691 /* SceneDelegate.swift */; };
 		BCF84CE426D14A1F00DC6691 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF84CE326D14A1F00DC6691 /* loginViewController.swift */; };
-		BCF84CE726D14A1F00DC6691 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCF84CE526D14A1F00DC6691 /* Main.storyboard */; };
-		BCF84CE926D14A2000DC6691 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCF84CE826D14A2000DC6691 /* Assets.xcassets */; };
 		BCF84CEC26D14A2000DC6691 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCF84CEA26D14A2000DC6691 /* LaunchScreen.storyboard */; };
 		BCF84CF426D14A8200DC6691 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BCF84CF326D14A8200DC6691 /* GoogleService-Info.plist */; };
+		BCFA8E7127176663001972AD /* PurchasePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFA8E7027176663001972AD /* PurchasePageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5DF957FCA12361BFB519DDE3 /* Pods-NeuroPilot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeuroPilot.release.xcconfig"; path = "Target Support Files/Pods-NeuroPilot/Pods-NeuroPilot.release.xcconfig"; sourceTree = "<group>"; };
 		BA5D2B48F69B2F714F0045AD /* Pods_NeuroPilot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NeuroPilot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC15BEE827043CCF005CA03F /* loginOrRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginOrRegisterViewController.swift; sourceTree = "<group>"; };
+		BC15BEED27043D80005CA03F /* startTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = startTestViewController.swift; sourceTree = "<group>"; };
+		BC15BEEF27043DE6005CA03F /* QuestionsPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsPageViewController.swift; sourceTree = "<group>"; };
+		BC15BEF227043E96005CA03F /* loginViaUsernameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViaUsernameViewController.swift; sourceTree = "<group>"; };
+		BC2846182711E8CC0078308F /* EmotionalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionalViewController.swift; sourceTree = "<group>"; };
+		BC28461A2711EEEE0078308F /* PhysicalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicalViewController.swift; sourceTree = "<group>"; };
+		BC33B7BB26EBC58E00912CC6 /* onboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onboardingViewController.swift; sourceTree = "<group>"; };
+		BC33B7BF26EBCBBE00912CC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC33E2B126DD50EA00520B84 /* credentials.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = credentials.plist; sourceTree = "<group>"; };
+		BC3599B226EE11F6004BF358 /* forgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = forgotPasswordViewController.swift; sourceTree = "<group>"; };
+		BC4390AE270616180020CBF7 /* FirstTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTaskViewController.swift; sourceTree = "<group>"; };
+		BC583BF52703877A00FE5742 /* tableViewClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableViewClass.swift; sourceTree = "<group>"; };
+		BC5B9AC026E285C800DCA491 /* firstPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firstPageViewController.swift; sourceTree = "<group>"; };
+		BC5CE50327258F0900259E26 /* FiraGO-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FiraGO-Regular.otf"; sourceTree = "<group>"; };
+		BC5CE50627258F3900259E26 /* FiraGO-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FiraGO-SemiBold.otf"; sourceTree = "<group>"; };
+		BC5CFC742709DB8D00AB1825 /* ProblemExchangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemExchangeViewController.swift; sourceTree = "<group>"; };
+		BC6BA4A726E3BBD400DAC918 /* profileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileViewController.swift; sourceTree = "<group>"; };
+		BC75941E27285F140072807A /* 11.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 11.json; sourceTree = "<group>"; };
+		BC75941F27285F140072807A /* 13..json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 13..json; sourceTree = "<group>"; };
+		BC75942027285F150072807A /* 14..json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 14..json; sourceTree = "<group>"; };
+		BC75942127285F150072807A /* 7..json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 7..json; sourceTree = "<group>"; };
+		BC75942227285F150072807A /* 8.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 8.json; sourceTree = "<group>"; };
+		BC75942327285F150072807A /* 6..json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 6..json; sourceTree = "<group>"; };
+		BC75942427285F160072807A /* 4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 4.json; sourceTree = "<group>"; };
+		BC75942527285F160072807A /* 9..json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 9..json; sourceTree = "<group>"; };
+		BC75942627285F160072807A /* 16.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 16.json; sourceTree = "<group>"; };
+		BC75942727285F170072807A /* 5.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 5.json; sourceTree = "<group>"; };
+		BC75942827285F170072807A /* 2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 2.json; sourceTree = "<group>"; };
+		BC75942927285F170072807A /* 12.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 12.json; sourceTree = "<group>"; };
+		BC75942A27285F170072807A /* 10..json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 10..json; sourceTree = "<group>"; };
+		BC75942B27285F180072807A /* 3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 3.json; sourceTree = "<group>"; };
+		BC75942C27285F180072807A /* 15..json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 15..json; sourceTree = "<group>"; };
+		BC75942D27285F180072807A /* 17..json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 17..json; sourceTree = "<group>"; };
+		BC75943F272882E10072807A /* 21..json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 21..json; sourceTree = "<group>"; };
+		BC759440272882E20072807A /* 26.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 26.json; sourceTree = "<group>"; };
+		BC759441272882E20072807A /* 19.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 19.json; sourceTree = "<group>"; };
+		BC759442272882E20072807A /* 18.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 18.json; sourceTree = "<group>"; };
+		BC759443272882E30072807A /* 20.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 20.json; sourceTree = "<group>"; };
+		BC759444272882E30072807A /* 22.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 22.json; sourceTree = "<group>"; };
+		BC759445272882E30072807A /* 24.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 24.json; sourceTree = "<group>"; };
+		BC759446272882E30072807A /* 23..json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 23..json; sourceTree = "<group>"; };
+		BC759447272882E40072807A /* 29..json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 29..json; sourceTree = "<group>"; };
+		BC759448272882E40072807A /* 28.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 28.json; sourceTree = "<group>"; };
+		BC759449272882E40072807A /* 25..json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 25..json; sourceTree = "<group>"; };
+		BC75944A272882E50072807A /* 27.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 27.json; sourceTree = "<group>"; };
+		BC75944B272882E50072807A /* 30..json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 30..json; sourceTree = "<group>"; };
+		BC87500A2700ACB2006B7834 /* fetchName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fetchName.swift; sourceTree = "<group>"; };
+		BC87500F27022954006B7834 /* taskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = taskViewController.swift; sourceTree = "<group>"; };
+		BCA56CA027270C4E00780883 /* 1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 1.json; sourceTree = "<group>"; };
+		BCA56CA22727136200780883 /* beforeSession.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = beforeSession.json; sourceTree = "<group>"; };
+		BCB5DE7E26E5561E0057AC02 /* NeuroPilot.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NeuroPilot.entitlements; sourceTree = "<group>"; };
+		BCB8C5D926FBA4D200E00BB4 /* DemoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoTableViewCell.swift; sourceTree = "<group>"; };
+		BCB8C5DA26FBA4D200E00BB4 /* DemoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DemoTableViewCell.xib; sourceTree = "<group>"; };
+		BCC2341D2719F2E70032EB22 /* BankPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankPageViewController.swift; sourceTree = "<group>"; };
+		BCC2341F271A019C0032EB22 /* 79952-successful.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "79952-successful.json"; sourceTree = "<group>"; };
+		BCED66B42718993600D8D184 /* SaleItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaleItemsViewController.swift; sourceTree = "<group>"; };
+		BCED66BE2718AD6600D8D184 /* DemoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoCollectionViewCell.swift; sourceTree = "<group>"; };
+		BCED66BF2718AD6600D8D184 /* DemoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DemoCollectionViewCell.xib; sourceTree = "<group>"; };
 		BCEEE93E26DE207D00C46AC8 /* registerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerViewController.swift; sourceTree = "<group>"; };
+		BCF17E93271F379B00F82F18 /* SessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionViewController.swift; sourceTree = "<group>"; };
+		BCF17E96271F412400F82F18 /* SessionSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionSecondViewController.swift; sourceTree = "<group>"; };
 		BCF84CDC26D14A1F00DC6691 /* NeuroPilot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeuroPilot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCF84CDF26D14A1F00DC6691 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCF84CE126D14A1F00DC6691 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		BCF84CE326D14A1F00DC6691 /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
-		BCF84CE626D14A1F00DC6691 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		BCF84CE826D14A2000DC6691 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCF84CEB26D14A2000DC6691 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BCF84CED26D14A2000DC6691 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCF84CF326D14A8200DC6691 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BCFA8E7027176663001972AD /* PurchasePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchasePageViewController.swift; sourceTree = "<group>"; };
 		E61C48BA0FB684A3E7096039 /* Pods-NeuroPilot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeuroPilot.debug.xcconfig"; path = "Target Support Files/Pods-NeuroPilot/Pods-NeuroPilot.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,10 +180,186 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BC15BEEA27043D06005CA03F /* onBoarding */ = {
+			isa = PBXGroup;
+			children = (
+				BC33B7BB26EBC58E00912CC6 /* onboardingViewController.swift */,
+			);
+			path = onBoarding;
+			sourceTree = "<group>";
+		};
+		BC15BEEB27043D4A005CA03F /* DemoTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				BCB8C5D926FBA4D200E00BB4 /* DemoTableViewCell.swift */,
+				BCB8C5DA26FBA4D200E00BB4 /* DemoTableViewCell.xib */,
+				BCED66BE2718AD6600D8D184 /* DemoCollectionViewCell.swift */,
+				BCED66BF2718AD6600D8D184 /* DemoCollectionViewCell.xib */,
+			);
+			path = DemoTableViewCell;
+			sourceTree = "<group>";
+		};
+		BC15BEEC27043D6F005CA03F /* firstPage */ = {
+			isa = PBXGroup;
+			children = (
+				BC5B9AC026E285C800DCA491 /* firstPageViewController.swift */,
+				BC15BEEF27043DE6005CA03F /* QuestionsPageViewController.swift */,
+				BC15BEED27043D80005CA03F /* startTestViewController.swift */,
+			);
+			path = firstPage;
+			sourceTree = "<group>";
+		};
+		BC15BEF127043E85005CA03F /* login */ = {
+			isa = PBXGroup;
+			children = (
+				BCF84CE326D14A1F00DC6691 /* loginViewController.swift */,
+				BC15BEE827043CCF005CA03F /* loginOrRegisterViewController.swift */,
+				BC15BEF227043E96005CA03F /* loginViaUsernameViewController.swift */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
+		BC15BEF427043F56005CA03F /* register */ = {
+			isa = PBXGroup;
+			children = (
+				BCEEE93E26DE207D00C46AC8 /* registerViewController.swift */,
+			);
+			path = register;
+			sourceTree = "<group>";
+		};
+		BC4390AD270615FA0020CBF7 /* Tasks */ = {
+			isa = PBXGroup;
+			children = (
+				BC87500F27022954006B7834 /* taskViewController.swift */,
+				BC4390AE270616180020CBF7 /* FirstTaskViewController.swift */,
+			);
+			path = Tasks;
+			sourceTree = "<group>";
+		};
+		BC5B9AC226E285CF00DCA491 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BC5CFC762709DB9900AB1825 /* Problem */,
+				BC15BEEA27043D06005CA03F /* onBoarding */,
+				BC15BEF427043F56005CA03F /* register */,
+				BC15BEEB27043D4A005CA03F /* DemoTableViewCell */,
+				BC6BA4A726E3BBD400DAC918 /* profileViewController.swift */,
+				BC3599B226EE11F6004BF358 /* forgotPasswordViewController.swift */,
+				BCF17E95271F37A000F82F18 /* Session */,
+				BCFA8E722717666E001972AD /* Purchase */,
+				BC4390AD270615FA0020CBF7 /* Tasks */,
+				BC15BEEC27043D6F005CA03F /* firstPage */,
+				BC15BEF127043E85005CA03F /* login */,
+				BC87500E2700C9D0006B7834 /* funcs & Classes */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		BC5CE50527258F1D00259E26 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				BC5CE50327258F0900259E26 /* FiraGO-Regular.otf */,
+				BC5CE50627258F3900259E26 /* FiraGO-SemiBold.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		BC5CFC762709DB9900AB1825 /* Problem */ = {
+			isa = PBXGroup;
+			children = (
+				BC5CFC742709DB8D00AB1825 /* ProblemExchangeViewController.swift */,
+				BC2846182711E8CC0078308F /* EmotionalViewController.swift */,
+				BC28461A2711EEEE0078308F /* PhysicalViewController.swift */,
+			);
+			path = Problem;
+			sourceTree = "<group>";
+		};
+		BC75943E272882BD0072807A /* Session2 */ = {
+			isa = PBXGroup;
+			children = (
+				BC759442272882E20072807A /* 18.json */,
+				BC759441272882E20072807A /* 19.json */,
+				BC759443272882E30072807A /* 20.json */,
+				BC75943F272882E10072807A /* 21..json */,
+				BC759444272882E30072807A /* 22.json */,
+				BC759446272882E30072807A /* 23..json */,
+				BC759445272882E30072807A /* 24.json */,
+				BC759449272882E40072807A /* 25..json */,
+				BC759440272882E20072807A /* 26.json */,
+				BC75944A272882E50072807A /* 27.json */,
+				BC759448272882E40072807A /* 28.json */,
+				BC759447272882E40072807A /* 29..json */,
+				BC75944B272882E50072807A /* 30..json */,
+			);
+			path = Session2;
+			sourceTree = "<group>";
+		};
+		BC87500E2700C9D0006B7834 /* funcs & Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BC583BF52703877A00FE5742 /* tableViewClass.swift */,
+				BC87500A2700ACB2006B7834 /* fetchName.swift */,
+			);
+			path = "funcs & Classes";
+			sourceTree = "<group>";
+		};
+		BCA56C9F27270C3D00780883 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				BCC2341F271A019C0032EB22 /* 79952-successful.json */,
+				BCA56CA42727136800780883 /* Problem1 */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		BCA56CA42727136800780883 /* Problem1 */ = {
+			isa = PBXGroup;
+			children = (
+				BCA56CA22727136200780883 /* beforeSession.json */,
+				BCA56CA52727138700780883 /* Session1 */,
+			);
+			path = Problem1;
+			sourceTree = "<group>";
+		};
+		BCA56CA52727138700780883 /* Session1 */ = {
+			isa = PBXGroup;
+			children = (
+				BCA56CA027270C4E00780883 /* 1.json */,
+				BC75942827285F170072807A /* 2.json */,
+				BC75942B27285F180072807A /* 3.json */,
+				BC75942427285F160072807A /* 4.json */,
+				BC75942727285F170072807A /* 5.json */,
+				BC75942327285F150072807A /* 6..json */,
+				BC75942127285F150072807A /* 7..json */,
+				BC75942227285F150072807A /* 8.json */,
+				BC75942527285F160072807A /* 9..json */,
+				BC75942A27285F170072807A /* 10..json */,
+				BC75941E27285F140072807A /* 11.json */,
+				BC75942927285F170072807A /* 12.json */,
+				BC75941F27285F140072807A /* 13..json */,
+				BC75942027285F150072807A /* 14..json */,
+				BC75942C27285F180072807A /* 15..json */,
+				BC75942627285F160072807A /* 16.json */,
+				BC75942D27285F180072807A /* 17..json */,
+				BC75943E272882BD0072807A /* Session2 */,
+			);
+			path = Session1;
+			sourceTree = "<group>";
+		};
+		BCF17E95271F37A000F82F18 /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				BCF17E93271F379B00F82F18 /* SessionViewController.swift */,
+				BCF17E96271F412400F82F18 /* SessionSecondViewController.swift */,
+			);
+			path = Session;
+			sourceTree = "<group>";
+		};
 		BCF84CD326D14A1E00DC6691 = {
 			isa = PBXGroup;
 			children = (
 				BCF84CDE26D14A1F00DC6691 /* NeuroPilot */,
+				BC5B9AC226E285CF00DCA491 /* ViewControllers */,
 				BCF84CDD26D14A1F00DC6691 /* Products */,
 				09458CEF7523F9CFC75DB61D /* Pods */,
 				78080EC32A7B80319B186CA7 /* Frameworks */,
@@ -86,18 +377,28 @@
 		BCF84CDE26D14A1F00DC6691 /* NeuroPilot */ = {
 			isa = PBXGroup;
 			children = (
+				BCB5DE7E26E5561E0057AC02 /* NeuroPilot.entitlements */,
 				BCF84CDF26D14A1F00DC6691 /* AppDelegate.swift */,
 				BCF84CE126D14A1F00DC6691 /* SceneDelegate.swift */,
-				BCF84CE326D14A1F00DC6691 /* loginViewController.swift */,
-				BCEEE93E26DE207D00C46AC8 /* registerViewController.swift */,
-				BCF84CE526D14A1F00DC6691 /* Main.storyboard */,
-				BCF84CE826D14A2000DC6691 /* Assets.xcassets */,
 				BCF84CEA26D14A2000DC6691 /* LaunchScreen.storyboard */,
+				BC33B7BF26EBCBBE00912CC6 /* Assets.xcassets */,
 				BCF84CED26D14A2000DC6691 /* Info.plist */,
 				BCF84CF326D14A8200DC6691 /* GoogleService-Info.plist */,
 				BC33E2B126DD50EA00520B84 /* credentials.plist */,
+				BCA56C9F27270C3D00780883 /* Animations */,
+				BC5CE50527258F1D00259E26 /* Fonts */,
 			);
 			path = NeuroPilot;
+			sourceTree = "<group>";
+		};
+		BCFA8E722717666E001972AD /* Purchase */ = {
+			isa = PBXGroup;
+			children = (
+				BCFA8E7027176663001972AD /* PurchasePageViewController.swift */,
+				BCC2341D2719F2E70032EB22 /* BankPageViewController.swift */,
+				BCED66B42718993600D8D184 /* SaleItemsViewController.swift */,
+			);
+			path = Purchase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,11 +461,46 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC5CE50427258F0A00259E26 /* FiraGO-Regular.otf in Resources */,
 				BCF84CEC26D14A2000DC6691 /* LaunchScreen.storyboard in Resources */,
 				BCF84CF426D14A8200DC6691 /* GoogleService-Info.plist in Resources */,
+				BC759451272882E50072807A /* 22.json in Resources */,
+				BC75943527285F180072807A /* 9..json in Resources */,
 				BC33E2B226DD50EA00520B84 /* credentials.plist in Resources */,
-				BCF84CE926D14A2000DC6691 /* Assets.xcassets in Resources */,
-				BCF84CE726D14A1F00DC6691 /* Main.storyboard in Resources */,
+				BC75943927285F180072807A /* 12.json in Resources */,
+				BCA56CA32727136300780883 /* beforeSession.json in Resources */,
+				BCB8C5DC26FBA4D200E00BB4 /* DemoTableViewCell.xib in Resources */,
+				BC759458272882E50072807A /* 30..json in Resources */,
+				BC759454272882E50072807A /* 29..json in Resources */,
+				BC75943C27285F180072807A /* 15..json in Resources */,
+				BC75944F272882E50072807A /* 18.json in Resources */,
+				BC75944E272882E50072807A /* 19.json in Resources */,
+				BC75944D272882E50072807A /* 26.json in Resources */,
+				BC75943227285F180072807A /* 8.json in Resources */,
+				BC75943727285F180072807A /* 5.json in Resources */,
+				BCA56CA127270C4E00780883 /* 1.json in Resources */,
+				BC75943027285F180072807A /* 14..json in Resources */,
+				BC75943627285F180072807A /* 16.json in Resources */,
+				BC759450272882E50072807A /* 20.json in Resources */,
+				BC33B7C026EBCBBE00912CC6 /* Assets.xcassets in Resources */,
+				BC75943427285F180072807A /* 4.json in Resources */,
+				BC759455272882E50072807A /* 28.json in Resources */,
+				BC75943A27285F180072807A /* 10..json in Resources */,
+				BC75943827285F180072807A /* 2.json in Resources */,
+				BC759456272882E50072807A /* 25..json in Resources */,
+				BC75943D27285F180072807A /* 17..json in Resources */,
+				BC759457272882E50072807A /* 27.json in Resources */,
+				BC75943327285F180072807A /* 6..json in Resources */,
+				BCC23420271A019C0032EB22 /* 79952-successful.json in Resources */,
+				BC75942F27285F180072807A /* 13..json in Resources */,
+				BC75943B27285F180072807A /* 3.json in Resources */,
+				BC75942E27285F180072807A /* 11.json in Resources */,
+				BC759453272882E50072807A /* 23..json in Resources */,
+				BC75943127285F180072807A /* 7..json in Resources */,
+				BC75944C272882E50072807A /* 21..json in Resources */,
+				BCED66C12718AD6600D8D184 /* DemoCollectionViewCell.xib in Resources */,
+				BC5CE50727258F3900259E26 /* FiraGO-SemiBold.otf in Resources */,
+				BC759452272882E50072807A /* 24.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,24 +570,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCF17E94271F379B00F82F18 /* SessionViewController.swift in Sources */,
+				BCB8C5DB26FBA4D200E00BB4 /* DemoTableViewCell.swift in Sources */,
+				BC3599B326EE11F6004BF358 /* forgotPasswordViewController.swift in Sources */,
+				BC15BEF027043DE6005CA03F /* QuestionsPageViewController.swift in Sources */,
+				BCFA8E7127176663001972AD /* PurchasePageViewController.swift in Sources */,
 				BCF84CE426D14A1F00DC6691 /* loginViewController.swift in Sources */,
+				BC87500B2700ACB2006B7834 /* fetchName.swift in Sources */,
+				BC583BF62703877A00FE5742 /* tableViewClass.swift in Sources */,
+				BCC2341E2719F2E70032EB22 /* BankPageViewController.swift in Sources */,
 				BCF84CE026D14A1F00DC6691 /* AppDelegate.swift in Sources */,
+				BC15BEF327043E96005CA03F /* loginViaUsernameViewController.swift in Sources */,
+				BC2846192711E8CC0078308F /* EmotionalViewController.swift in Sources */,
+				BCED66B52718993600D8D184 /* SaleItemsViewController.swift in Sources */,
+				BC6BA4A826E3BBD500DAC918 /* profileViewController.swift in Sources */,
+				BC4390AF270616190020CBF7 /* FirstTaskViewController.swift in Sources */,
+				BCF17E97271F412400F82F18 /* SessionSecondViewController.swift in Sources */,
+				BCED66C02718AD6600D8D184 /* DemoCollectionViewCell.swift in Sources */,
+				BC28461B2711EEEE0078308F /* PhysicalViewController.swift in Sources */,
+				BC15BEEE27043D80005CA03F /* startTestViewController.swift in Sources */,
+				BC5CFC752709DB8E00AB1825 /* ProblemExchangeViewController.swift in Sources */,
 				BCF84CE226D14A1F00DC6691 /* SceneDelegate.swift in Sources */,
+				BC5B9AC126E285C800DCA491 /* firstPageViewController.swift in Sources */,
 				BCEEE93F26DE207D00C46AC8 /* registerViewController.swift in Sources */,
+				BC15BEE927043CCF005CA03F /* loginOrRegisterViewController.swift in Sources */,
+				BC33B7BC26EBC58E00912CC6 /* onboardingViewController.swift in Sources */,
+				BC87501027022954006B7834 /* taskViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		BCF84CE526D14A1F00DC6691 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BCF84CE626D14A1F00DC6691 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BCF84CEA26D14A2000DC6691 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -386,8 +736,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CODE_SIGN_ENTITLEMENTS = NeuroPilot/NeuroPilot.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JBZ7YJVWA2;
+				DEVELOPMENT_TEAM = 3J5J5NZ5HM;
 				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
 				INFOPLIST_FILE = NeuroPilot/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
@@ -395,7 +746,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = kakha.NeuroPilot;
+				PRODUCT_BUNDLE_IDENTIFIER = kakha.NeuroPilot1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -409,8 +760,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CODE_SIGN_ENTITLEMENTS = NeuroPilot/NeuroPilot.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JBZ7YJVWA2;
+				DEVELOPMENT_TEAM = 3J5J5NZ5HM;
 				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
 				INFOPLIST_FILE = NeuroPilot/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
@@ -418,7 +770,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = kakha.NeuroPilot;
+				PRODUCT_BUNDLE_IDENTIFIER = kakha.NeuroPilot1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
