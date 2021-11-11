@@ -45,7 +45,6 @@ class startTestViewController: UIViewController {
     }()
      var labelSecond: UILabel = {
        var labelSecond = UILabel()
-//        labelSecond.text = "მიღებული ინფორმაცია არის კვლევის მონაცემები ზოგადი მდგომარეობის შესასწავლად. მაგ.: შფოთვის, დეპრესიის და დაბალი თვითსეფასების ზღვარის განსასაზღვრად."
         labelSecond.textAlignment = .center
         labelSecond.numberOfLines = 6
         labelSecond.textColor = UIColor(red: 36/255.0, green: 14/255.0, blue: 70/255.0, alpha: 1.0)

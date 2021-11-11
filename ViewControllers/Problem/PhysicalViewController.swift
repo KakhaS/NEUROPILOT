@@ -81,7 +81,7 @@ class PhysicalViewController: UIViewController, UITableViewDataSource, UITableVi
                                       y: UIScreen.main.bounds.height / 1.14,
                                       width: UIScreen.main.bounds.width / 1.037,
                                       height: UIScreen.main.bounds.height / 14.2)
-         cellEndButton.addTarget(self, action: #selector(nextButtonPressed), for: .touchUpInside)
+//         cellEndButton.addTarget(self, action: #selector(nextButtonPressed), for: .touchUpInside)
          return cellEndButton
      }()
     
@@ -162,7 +162,8 @@ class PhysicalViewController: UIViewController, UITableViewDataSource, UITableVi
         tableView.reloadData()
     }
     @objc func nextButtonPressed() {
+        let vc = SessionViewController()
         presentViewController(myView: SessionViewController())
-        SessionViewController().identification = "Physical"
+        
     }
 }

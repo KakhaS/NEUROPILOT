@@ -63,7 +63,7 @@ class ProblemExchangeViewController: UIViewController, UITableViewDelegate,  UIT
     private let explanationLabel: UILabel = {
        let explanationLabel = UILabel()
         let textColor = UIColor(red: 36/255.0, green: 14/255.0, blue: 70/255.0, alpha: 1.0)
-        explanationLabel.text = "შეგიძლიათ მონიშნოთ 1 ან რამოდენიმე"
+        explanationLabel.text = "შეგიძლიათ მონიშნოთ 1 ან მეტი"
         explanationLabel.textAlignment = .left
         explanationLabel.numberOfLines = 2
         explanationLabel.textColor = textColor
@@ -107,7 +107,6 @@ class ProblemExchangeViewController: UIViewController, UITableViewDelegate,  UIT
                                  y: UIScreen.main.bounds.height / 3.8,
                                  width: UIScreen.main.bounds.width / 1.085,
                                  height: UIScreen.main.bounds.height / 1.65)
-        print("ss")
     }
     
     func tableViewSetup() {
@@ -126,8 +125,10 @@ class ProblemExchangeViewController: UIViewController, UITableViewDelegate,  UIT
         presentViewController(myView: firstPageViewController())
     }
     @objc func nextButtonPressed() {
-        presentViewController(myView: SessionViewController())
-        SessionViewController().identification = "ProblemExchange"
+        let vc = SessionViewController()
+        vc.currentRoot = .problem
+        presentViewController(myView: vc)
+       
     }
     func presentViewController(myView: UIViewController) {
         let vc = myView

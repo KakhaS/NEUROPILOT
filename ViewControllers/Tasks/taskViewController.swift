@@ -63,6 +63,7 @@ class taskViewController: UIViewController, UITableViewDelegate, UITableViewData
                     CellFunctions(tableviewData: "ემოციური წონასწორობის და კონცენტრაციის გაძლიერება"),
                      CellFunctions(tableviewData: "ფიზიკური ტრავმის შიშის დაძლევა")
     ]
+    let taskImages: [String] = ["physicalIcon", "emotionIcon", "problemIcon"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -112,8 +113,9 @@ class taskViewController: UIViewController, UITableViewDelegate, UITableViewData
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "DemoTableViewCell", for: indexPath) as! DemoTableViewCell
         cell.setUp(cell: taskData[indexPath.row])
+    
         cell.cellLabel.textColor = UIColor(red: 36/255.0, green: 14/255.0, blue: 70/255.0, alpha: 1.0)
-        cell.cellDesign.setImage(UIImage(named: "circleTask"), for: .normal)
+        cell.cellDesign.setImage(UIImage(named: taskImages[indexPath.row]), for: .normal)
         cell.cellDesign.tag = indexPath.row
         cell.cellDesign.addTarget(self, action: #selector(circlePressed), for: .touchUpInside)
         cell.backgroundColor = UIColor.clear

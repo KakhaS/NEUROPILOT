@@ -44,7 +44,7 @@ class profileViewController: UIViewController {
     private let nameLabel: UILabel = {
        let nameLabel = UILabel()
         let textColor = UIColor(red: 36/255.0, green: 14/255.0, blue: 70/255.0, alpha: 0.7)
-        nameLabel.text = "Name"
+        nameLabel.text = "სახელი"
         nameLabel.textColor = textColor
         nameLabel.font = UIFont(name: "Helvetica", size: UIScreen.main.bounds.width / 27.857)
         nameLabel.frame = CGRect(x: UIScreen.main.bounds.width / 24.375,
@@ -68,8 +68,8 @@ class profileViewController: UIViewController {
     private let emailLabel: UILabel = {
        let emailLabel = UILabel()
         let textColor = UIColor(red: 36/255.0, green: 14/255.0, blue: 70/255.0, alpha: 0.7)
-        emailLabel.text = "Email"
-        emailLabel.font = UIFont(name: "Helvetica", size: UIScreen.main.bounds.width / 27.857)
+        emailLabel.text = "ელ. ფოსტა"
+        emailLabel.font = UIFont(name: "Helvetica", size: UIScreen.main.bounds.width / 40)
         emailLabel.textColor = textColor
         emailLabel.frame = CGRect(x: UIScreen.main.bounds.width / 24.375 ,
                                   y: UIScreen.main.bounds.height / 3.417 ,
@@ -112,9 +112,9 @@ class profileViewController: UIViewController {
     private let passwordLabel: UILabel = {
     let passwordLabel = UILabel()
         let textColor = UIColor(red: 36/255.0, green: 14/255.0, blue: 70/255.0, alpha: 0.7)
-        passwordLabel.text = "Password"
+        passwordLabel.text = "პაროლი"
         passwordLabel.textColor = textColor
-        passwordLabel.font = UIFont(name: "Helvetica", size: UIScreen.main.bounds.width / 27.857)
+        passwordLabel.font = UIFont(name: "Helvetica", size: UIScreen.main.bounds.width / 40)
         passwordLabel.frame = CGRect(x: UIScreen.main.bounds.width / 24.375 ,
                                      y: UIScreen.main.bounds.height / 2.432276 ,
                                      width: UIScreen.main.bounds.width / 6.1904 ,
@@ -205,28 +205,28 @@ class profileViewController: UIViewController {
                                     height: UIScreen.main.bounds.height / 18.883)
         return toggleButton
     }()
-    private let headphoneLabel: UILabel = {
-       let headphoneLabel = UILabel()
-        headphoneLabel.text = "if you can put your headphones on, if its not possible you can mute sound"
-        headphoneLabel.textAlignment = .left
-        headphoneLabel.numberOfLines = 2
-        headphoneLabel.textColor = .systemPurple
-        headphoneLabel.font = UIFont(name: "Helvetica", size: UIScreen.main.bounds.width / 30.857)
-        headphoneLabel.frame = CGRect(x: UIScreen.main.bounds.width / 15.5,
-                                      y: UIScreen.main.bounds.height / 1.52,
-                                      width: UIScreen.main.bounds.width / 1.5,
-                                      height: UIScreen.main.bounds.height / 4.8)
-        return headphoneLabel
-    }()
-    private let muteButton: UIButton = {
-       let muteButton = UIButton()
-        muteButton.setImage(UIImage(named: "mute"), for: .normal)
-        muteButton.frame = CGRect(x: UIScreen.main.bounds.width / 23.4,
-                                  y: UIScreen.main.bounds.height / 1.18,
-                                  width: UIScreen.main.bounds.width / 8.9,
-                                  height: UIScreen.main.bounds.height / 19.33)
-        return muteButton
-    }()
+//    private let headphoneLabel: UILabel = {
+//       let headphoneLabel = UILabel()
+//        headphoneLabel.text = "if you can put your headphones on, if its not possible you can mute sound"
+//        headphoneLabel.textAlignment = .left
+//        headphoneLabel.numberOfLines = 2
+//        headphoneLabel.textColor = .systemPurple
+//        headphoneLabel.font = UIFont(name: "Helvetica", size: UIScreen.main.bounds.width / 30.857)
+//        headphoneLabel.frame = CGRect(x: UIScreen.main.bounds.width / 15.5,
+//                                      y: UIScreen.main.bounds.height / 1.52,
+//                                      width: UIScreen.main.bounds.width / 1.5,
+//                                      height: UIScreen.main.bounds.height / 4.8)
+//        return headphoneLabel
+//    }()
+//    private let muteButton: UIButton = {
+//       let muteButton = UIButton()
+//        muteButton.setImage(UIImage(named: "mute"), for: .normal)
+//        muteButton.frame = CGRect(x: UIScreen.main.bounds.width / 23.4,
+//                                  y: UIScreen.main.bounds.height / 1.18,
+//                                  width: UIScreen.main.bounds.width / 8.9,
+//                                  height: UIScreen.main.bounds.height / 19.33)
+//        return muteButton
+//    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -249,8 +249,8 @@ class profileViewController: UIViewController {
         view.addSubview(geLabel)
         view.addSubview(enLabel)
         view.addSubview(toggleButton)
-        view.addSubview(headphoneLabel)
-        view.addSubview(muteButton)
+//        view.addSubview(headphoneLabel)
+//        view.addSubview(muteButton)
         view.addSubview(editButton2)
     }
 

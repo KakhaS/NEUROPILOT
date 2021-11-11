@@ -47,7 +47,8 @@ class firstPageViewController: UIViewController {
         let textColor = UIColor(red: 36/255.0, green: 14/255.0, blue: 70/255.0, alpha: 1.0)
         nameLabel.textColor = textColor
         nameLabel.textAlignment = .left
-        nameLabel.font = UIFont(name: "FiraGO-Regular", size: 22)
+        nameLabel.numberOfLines = 2 
+        nameLabel.font = UIFont(name: "FiraGO-Regular", size: 15)
         nameLabel.frame = CGRect(x: UIScreen.main.bounds.width / 16.3,
                                  y: UIScreen.main.bounds.height / 4.2,
                                  width: UIScreen.main.bounds.width / 3.5,
@@ -73,7 +74,7 @@ class firstPageViewController: UIViewController {
         signOut.setTitle("გამოსვლა", for: .normal)
         signOut.setTitleColor(.systemBlue, for: .normal)
         signOut.setTitleColor(.systemBlue, for: .highlighted)
-        
+        signOut.titleLabel?.font = UIFont(name: "FiraGO-Regular", size: 10)
         signOut.frame = CGRect(x: UIScreen.main.bounds.width / 97.25,
                                   y: UIScreen.main.bounds.height / 18.18,
                                   width: UIScreen.main.bounds.width / 4.84,
@@ -133,9 +134,9 @@ class firstPageViewController: UIViewController {
     }()
     private let chooseLabel: UILabel = {
         let chooseLabel = UILabel()
-        chooseLabel.text = "Choose your Gender"
+        chooseLabel.text = "შემდეგ სესიამდე დარჩა 2 დღე"
         chooseLabel.textColor = .orange
-        chooseLabel.font = UIFont(name: "FiraGO-Regular", size: 16)
+        chooseLabel.font = UIFont(name: "FiraGO-Regular", size: 14)
         chooseLabel.frame = CGRect(x: UIScreen.main.bounds.width / 5.6,
                                      y: UIScreen.main.bounds.height / 1.94,
                                      width: UIScreen.main.bounds.width / 1.52,
@@ -154,7 +155,7 @@ class firstPageViewController: UIViewController {
     private let label1: UILabel = {
        let label1 = UILabel()
         let textColor = UIColor(red: 36/255.0, green: 14/255.0, blue: 70/255.0, alpha: 1.0)
-        label1.text = "სულ ცოტა დაგრჩა ადგილი სადაც გაჩერდა"
+        label1.text = "შეარჩიე რაც გსურს"
         label1.numberOfLines = 2
         label1.textAlignment = .left
         label1.textColor = textColor
@@ -168,7 +169,7 @@ class firstPageViewController: UIViewController {
     private let label2: UILabel = {
        let label2 = UILabel()
         let textColor = UIColor(red: 36/255.0, green: 14/255.0, blue: 70/255.0, alpha: 1.0)
-        label2.text = "შემდეგ სესიამდე დარჩა 2 დღე"
+        label2.text = "შეარჩიე რაც გსურს"
         label2.textAlignment = .left
         label2.numberOfLines = 2
         label2.textColor = textColor
@@ -207,7 +208,7 @@ class firstPageViewController: UIViewController {
         view.addSubview(logoSmall)
         view.addSubview(chooseLabel)
         view.addSubview(backgroundWhite2)
-        view.addSubview(label1)
+//        view.addSubview(label1)
         view.addSubview(label2)
         view.addSubview(nextButton)
     }

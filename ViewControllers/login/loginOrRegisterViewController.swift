@@ -49,7 +49,7 @@ class loginOrRegisterViewController: UIViewController {
         let greetingText = UILabel()
         let textColor = UIColor(red: 255/255.0, green: 255/255.0, blue: 255/255.0, alpha: 0.7)
         greetingText.textColor = textColor
-        greetingText.text = "მე მიყვარს ჩემი გონება !                             ის, სწრაფია და მოხერხებული!"
+        greetingText.text = "მე მიყვარს ჩემი გონება ! ის, სწრაფია და მოხერხებული!"
         greetingText.numberOfLines = 3
         greetingText.font = UIFont(name: "FiraGO-Regular", size: 20)
         greetingText.alpha = 0.6
@@ -63,7 +63,7 @@ class loginOrRegisterViewController: UIViewController {
     }()
     private let accountCreationButton: UIButton = {
         let accountCreationButton = UIButton()
-        accountCreationButton.setImage(UIImage(named: "createAccount"), for: .normal)
+        accountCreationButton.setImage(UIImage(named: "registration1"), for: .normal)
         accountCreationButton.frame = CGRect(x: (UIScreen.main.bounds.width / 2) - (UIScreen.main.bounds.width / 1.1 / 2),
             y: UIScreen.main.bounds.height / 1.34,
             width: UIScreen.main.bounds.width / 1.1,
@@ -73,7 +73,7 @@ class loginOrRegisterViewController: UIViewController {
     }()
     private let loginButton: UIButton = {
        let loginbutton = UIButton()
-        loginbutton.setImage(UIImage(named: "loginWhite"), for: .normal)
+        loginbutton.setImage(UIImage(named: "login1"), for: .normal)
         loginbutton.frame = CGRect(x: (UIScreen.main.bounds.width / 2) - (UIScreen.main.bounds.width  / 1.1 / 2) ,
             y: UIScreen.main.bounds.height / 1.18,
                                    width: UIScreen.main.bounds.width  / 1.1,
@@ -120,7 +120,6 @@ extension loginOrRegisterViewController: GIDSignInDelegate {
             let username = user.profile.name ?? "NoName"
             let email = user.profile.email ?? "No Email"
             writeData(email: email, name: username)
-           
         } else {
            return
             print("Error occured")

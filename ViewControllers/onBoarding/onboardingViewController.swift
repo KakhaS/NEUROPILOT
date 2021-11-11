@@ -55,7 +55,7 @@ class onboardingViewController: UIViewController {
     }()
     private let getStartedButton: UIButton = {
        let getStartedButton = UIButton()
-        getStartedButton.setImage(UIImage(named: "getStarted"), for: .normal)
+        getStartedButton.setImage(UIImage(named: "getStarted1"), for: .normal)
         getStartedButton.frame = CGRect(x: UIScreen.main.bounds.width / 35,
                                         y: UIScreen.main.bounds.height / 1.18,
                                         width:  UIScreen.main.bounds.width / 1.05,

@@ -8,7 +8,9 @@
 import UIKit
 import Lottie
 
+
 class BankPageViewController: UIViewController {
+    var whichRoot = rootController.problem
 
     private let bankLogo: UIImageView = {
        let bankLogo = UIImageView()
@@ -36,7 +38,7 @@ class BankPageViewController: UIViewController {
         gelLabel.text = "0.00 ₾"
         gelLabel.textAlignment = .left
         gelLabel.textColor = .lightGray
-        gelLabel.font = UIFont(name: "Helvetica", size: 16)
+        gelLabel.font = UIFont(name: "FiraGo-Regular", size: 16)
         gelLabel.frame = CGRect(x: UIScreen.main.bounds.width / 1.4,
                                    y: UIScreen.main.bounds.height / 6.5,
                                    width: UIScreen.main.bounds.width / 1.89,
@@ -48,7 +50,7 @@ class BankPageViewController: UIViewController {
         payLabel.text = "გადაიხადე ბარათით"
         payLabel.textColor = .orange
         payLabel.textAlignment = .center
-        payLabel.font = UIFont(name: "Helvetica", size: 18)
+        payLabel.font = UIFont(name: "FiraGO-SemiBold", size: 18)
         payLabel.frame = CGRect(x: (UIScreen.main.bounds.width / 2) - (UIScreen.main.bounds.width / 1.89 / 2),
                                 y: UIScreen.main.bounds.height / 4.5,
                                 width: UIScreen.main.bounds.width / 1.89,
@@ -122,7 +124,6 @@ class BankPageViewController: UIViewController {
     private var animationView: AnimationView?
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         view.backgroundColor = .white
         view.addSubview(bankLogo)
         view.addSubview(amountLabel)
@@ -136,6 +137,12 @@ class BankPageViewController: UIViewController {
         
 }
     @objc func payPressed() {
+        let vc = SessionViewController()
+        if whichRoot == .problem {
+        vc.currentRoot = .problem1Session2
+        } else if whichRoot == .emotional {
+            vc.currentRoot = .problem2Session2
+        }
         animationView = .init(name: "79952-successful")
         payButton.isHidden = true
         visaImage.isHidden = true
@@ -150,7 +157,8 @@ class BankPageViewController: UIViewController {
         animationView!.loopMode = .playOnce
         animationView!.play()
         DispatchQueue.main.asyncAfter(deadline: .now() + 3.5) {
-            self.dismiss(animated: true, completion: nil)
+            vc.modalPresentationStyle = .fullScreen
+            self.present(vc, animated: true)
         }
         
     }

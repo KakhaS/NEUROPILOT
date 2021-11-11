@@ -71,11 +71,11 @@ class QuestionsPageViewController: UIViewController, UITableViewDelegate, UITabl
     private let explanationLabel: UILabel = {
        let explanationLabel = UILabel()
         let textColor = UIColor(red: 36/255.0, green: 14/255.0, blue: 70/255.0, alpha: 1.0)
-        explanationLabel.text = "შეგიძლიათ მონიშნოთ 1 ან რამოდენიმე"
+        explanationLabel.text = "შეგიძლიათ მონიშნოთ 1 ან მეტი"
         explanationLabel.textAlignment = .left
-        explanationLabel.numberOfLines = 2
+        explanationLabel.numberOfLines = 3
         explanationLabel.textColor = textColor
-        explanationLabel.font = UIFont(name: "FiraGO-Regular", size: 16)
+        explanationLabel.font = UIFont(name: "FiraGO-Regular", size: 14)
         explanationLabel.frame = CGRect(x: UIScreen.main.bounds.width / 23.47,
                                         y: UIScreen.main.bounds.height / 5.8,
                                         width: UIScreen.main.bounds.width / 2.17,
@@ -146,11 +146,6 @@ class QuestionsPageViewController: UIViewController, UITableViewDelegate, UITabl
         cellEndButton.setImage(UIImage(named: "finishButton"), for: .normal)
         cellEndButton.addTarget(self, action: #selector(finishedButtonPress), for: .touchUpInside)
         cellData = cellData2
-//            if tagCounter == [] {
-//                cellEndButton.alpha = 0.3
-//            } else {
-//                cellEndButton.isEnabled = true
-//            }
         tableView.reloadData()
     }
     
@@ -178,8 +173,6 @@ class QuestionsPageViewController: UIViewController, UITableViewDelegate, UITabl
             cellData[sender.tag].isSelected = .isSelected
             indexCounter.append(sender.accessibilityIdentifier ?? "")
         }
-//        let senderTag = "\(sender.tag)"
-//        tagCounter.append(senderTag)
         tableView.reloadData()
     }
     func diagnose(clicks: [String]) -> String {
@@ -189,21 +182,21 @@ class QuestionsPageViewController: UIViewController, UITableViewDelegate, UITabl
         let cCategory = indexCounter.filter{$0.contains("C")}
         
         if aCategory.count >= 2 && bCategory.count == 2{
-           result = "მსუბუქი დეპრესია"
+           result = "თქვენ გამოგივლინდათ მსუბუქი დეპრესია. სურვილის შემთხვევაში, გთხოვთ მიმართოთ სპეციალისტს."
         } else if aCategory.count >= 1 && bCategory.count == 3 {
-            result = "საშუალო სიმძიმის დეპრესია"
+            result = "თქვენ გამოგივლინდათ საშუალო სიმძიმის დეპრესია. საჭიროებისამებრ მიმართეთ სპეციალისტს."
         } else if aCategory.count == 2 && bCategory.count == 4 {
-            result = "მძიმე დეპრესია"
+            result = "თქვენ გამოგივლინდათ მძიმე დეპრესია. გთხოვთ, მიმართოთ სპეციალისტს."
         } else if aCategory.count >= 1 && cCategory.count == 2 {
-            result = "მსუბუქი შფოთვა"
+            result = "თქვენ გამოგივლინდათ მსუბუქი შფოთვა. სურვილის შემთხვევაში, გთხოვთ მიმართოთ სპეციალისტს."
         } else if aCategory.count >= 1 && cCategory.count == 3 {
-            result = "საშუალო შფოთვა"
+            result = "თქვენ გამოგივლინდათ საშუალო სიმძიმის შფოთვა. გთხოვთ, საჭიროებისამებრ მიმართოთ სპეციალისტს."
         } else if aCategory.count >= 2 && cCategory.count >= 4 {
-            result = "მძიმე შფოთვა"
+            result = "თქვენ გამოგივლინდათ მძიმე შფოთვა. გთხოვთ, მიმართოთ სპეციალისტს."
         } else if aCategory.count >= 2 && bCategory.count >= 4 && cCategory.count >= 4 {
-            result = "დეპრესია და შფოთვა"
+            result = "თქვენ გამოგივლინდათ დეპრესია და შფოთვა. გთხოვთ, მიმართოთ სპეციალისტს."
         } else {
-            result = "დიაგნოსზის დადგმა შეუძლებელია, გთხოვ გაიარო ტესტი თავიდან"
+            result = "გამოხატული დეპრესია ან შფოთვა არ შეინიშნება. გირჩევთ დასვენებას და თქვენთვის სასიამოვნო საქმიანობისთვის დროის გამოძებნას."
         }
         return result
         }

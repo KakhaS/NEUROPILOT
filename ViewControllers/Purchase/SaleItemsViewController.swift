@@ -10,7 +10,7 @@ import UIKit
 
 
 class SaleItemsViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-    
+    var whichRoot = rootController.problem
     let imageNames: [String] = ["firstCell", "secondCell", "thirdCell"]
     let collectionView = UICollectionView(frame: CGRect(x: 0,
                                                         y: 200,
@@ -37,24 +37,11 @@ class SaleItemsViewController: UIViewController, UICollectionViewDelegate, UICol
                                height: UIScreen.main.bounds.height / 33.83)
         return topText
     }()
-    private let secondaryText: UILabel = {
-       let secondaryText = UILabel()
-        secondaryText.text = "Sometimes I’ll start a sentence and I don’t even know where it’s going. I just hope I find it along the way."
-        secondaryText.numberOfLines = 3
-        secondaryText.textAlignment = .center
-        secondaryText.font = UIFont(name: "Helvetica", size: 14)
-        secondaryText.textColor = UIColor(red: 36/255.0, green: 14/255.0, blue: 70/255.0, alpha: 1.0)
-        secondaryText.frame = CGRect(x: (UIScreen.main.bounds.width / 2) - (UIScreen.main.bounds.width / 1.5 / 2),
-                                     y: UIScreen.main.bounds.height / 4.37,
-                                     width: UIScreen.main.bounds.width  / 1.5,
-                                     height: UIScreen.main.bounds.height / 14)
-        return secondaryText
-    }()
     private let purchaseButton: UIButton = {
        let purchaseButton = UIButton()
         purchaseButton.setImage(UIImage(named: "purchaseButton2"), for: .normal)
         purchaseButton.frame = CGRect(x: (UIScreen.main.bounds.width / 2) - (UIScreen.main.bounds.width / 1.1 / 2),
-                                      y: UIScreen.main.bounds.height / 1.32,
+                                      y: UIScreen.main.bounds.height / 1.22,
                                       width: UIScreen.main.bounds.width / 1.1,
                                       height: UIScreen.main.bounds.height / 12.3)
         purchaseButton.addTarget(self, action: #selector(purchaPressed), for: .touchUpInside)
@@ -64,10 +51,10 @@ class SaleItemsViewController: UIViewController, UICollectionViewDelegate, UICol
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.showsHorizontalScrollIndicator = false
+        collectionView.backgroundColor = .clear
         view.backgroundColor = .white
         view.addSubview(dismissButton)
         view.addSubview(topText)
-        view.addSubview(secondaryText)
         view.addSubview(collectionView)
         view.addSubview(purchaseButton)
         collectionView.delegate = self
@@ -77,13 +64,13 @@ class SaleItemsViewController: UIViewController, UICollectionViewDelegate, UICol
         if let flowLayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
             flowLayout.scrollDirection = .horizontal
         }
-
     }
     @objc func dismissButtonClicked() {
         dismiss(animated: false, completion: nil)
     }
     @objc func purchaPressed() {
         let vc = BankPageViewController()
+        vc.whichRoot = whichRoot
         present(vc, animated: true)
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

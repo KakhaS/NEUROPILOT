@@ -9,7 +9,27 @@ import UIKit
 import Lottie
 
 class SessionViewController: UIViewController {
-    var identification = ""
+    
+    var currentRoot = rootController.problem
+    func enumUsability() {
+        switch currentRoot {
+        case .problem:
+            setUpAnimation(name: "beforeSession")
+        case .emotional:
+            setUpAnimation(name: "beforeSession")
+        case .physical:
+            print("not yet ready")
+        case .problem1Session2:
+           setUpAnimation(name: "beforeSession")
+        case .problem1Session3:
+            setUpAnimation(name: "beforeSession")
+        case .problem2Session2:
+            setUpAnimation(name: "beforeSession")
+        case .problem2Session3:
+            setUpAnimation(name: "beforeSession")
+        }
+    }
+
     private var animationView: AnimationView?
     private let homeButton: UIButton = {
         let homeButton = UIButton()
@@ -79,8 +99,10 @@ class SessionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        enumUsability()
         let backgroundColor = UIColor(red: 255/255.0, green: 252/255.0, blue: 245/255.0, alpha: 1.0)
         view.backgroundColor = backgroundColor
+        
         view.addSubview(homeButton)
         view.addSubview(backButton)
 //        view.addSubview(logoImage)
@@ -89,10 +111,10 @@ class SessionViewController: UIViewController {
         view.addSubview(remark)
         view.addSubview(beginButton)
         view.addSubview(muteButton)
-        setUpAnimation()
+       
     }
-    func setUpAnimation() {
-        animationView = .init(name: "beforeSession")
+    func setUpAnimation(name: String) {
+        animationView = .init(name: name)
         view.addSubview(animationView!)
         animationView!.frame = CGRect(x: (UIScreen.main.bounds.width / 2) - (UIScreen.main.bounds.width / 1.588 / 2),
                                       y: UIScreen.main.bounds.height / 8.24,
@@ -110,6 +132,8 @@ class SessionViewController: UIViewController {
     }
     @objc func beginButtonPressed() {
         let vc = SessionSecondViewController()
+        vc.clickIndex = 0
+        vc.selectedRoot = currentRoot
         vc.modalPresentationStyle = .fullScreen
         present(vc, animated: false)
     }

@@ -8,6 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		25AE2029FB6196822543BEC8 /* Pods_NeuroPilot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA5D2B48F69B2F714F0045AD /* Pods_NeuroPilot.framework */; };
+		BC113594272EED9F00775A46 /* 23..json in Resources */ = {isa = PBXBuildFile; fileRef = BC113587272EED9E00775A46 /* 23..json */; };
+		BC113595272EED9F00775A46 /* 27.json in Resources */ = {isa = PBXBuildFile; fileRef = BC113588272EED9E00775A46 /* 27.json */; };
+		BC113597272EED9F00775A46 /* 30..json in Resources */ = {isa = PBXBuildFile; fileRef = BC11358A272EED9E00775A46 /* 30..json */; };
+		BC113598272EED9F00775A46 /* 19.json in Resources */ = {isa = PBXBuildFile; fileRef = BC11358B272EED9E00775A46 /* 19.json */; };
+		BC113599272EED9F00775A46 /* 20.json in Resources */ = {isa = PBXBuildFile; fileRef = BC11358C272EED9E00775A46 /* 20.json */; };
+		BC11359A272EED9F00775A46 /* 21..json in Resources */ = {isa = PBXBuildFile; fileRef = BC11358D272EED9E00775A46 /* 21..json */; };
+		BC11359C272EED9F00775A46 /* 29..json in Resources */ = {isa = PBXBuildFile; fileRef = BC11358F272EED9F00775A46 /* 29..json */; };
+		BC11359D272EED9F00775A46 /* 26.json in Resources */ = {isa = PBXBuildFile; fileRef = BC113590272EED9F00775A46 /* 26.json */; };
+		BC11359E272EED9F00775A46 /* 22.json in Resources */ = {isa = PBXBuildFile; fileRef = BC113591272EED9F00775A46 /* 22.json */; };
+		BC11359F272EED9F00775A46 /* 28.json in Resources */ = {isa = PBXBuildFile; fileRef = BC113592272EED9F00775A46 /* 28.json */; };
 		BC15BEE927043CCF005CA03F /* loginOrRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC15BEE827043CCF005CA03F /* loginOrRegisterViewController.swift */; };
 		BC15BEEE27043D80005CA03F /* startTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC15BEED27043D80005CA03F /* startTestViewController.swift */; };
 		BC15BEF027043DE6005CA03F /* QuestionsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC15BEEF27043DE6005CA03F /* QuestionsPageViewController.swift */; };
@@ -41,21 +51,45 @@
 		BC75943B27285F180072807A /* 3.json in Resources */ = {isa = PBXBuildFile; fileRef = BC75942B27285F180072807A /* 3.json */; };
 		BC75943C27285F180072807A /* 15..json in Resources */ = {isa = PBXBuildFile; fileRef = BC75942C27285F180072807A /* 15..json */; };
 		BC75943D27285F180072807A /* 17..json in Resources */ = {isa = PBXBuildFile; fileRef = BC75942D27285F180072807A /* 17..json */; };
-		BC75944C272882E50072807A /* 21..json in Resources */ = {isa = PBXBuildFile; fileRef = BC75943F272882E10072807A /* 21..json */; };
-		BC75944D272882E50072807A /* 26.json in Resources */ = {isa = PBXBuildFile; fileRef = BC759440272882E20072807A /* 26.json */; };
-		BC75944E272882E50072807A /* 19.json in Resources */ = {isa = PBXBuildFile; fileRef = BC759441272882E20072807A /* 19.json */; };
-		BC75944F272882E50072807A /* 18.json in Resources */ = {isa = PBXBuildFile; fileRef = BC759442272882E20072807A /* 18.json */; };
-		BC759450272882E50072807A /* 20.json in Resources */ = {isa = PBXBuildFile; fileRef = BC759443272882E30072807A /* 20.json */; };
-		BC759451272882E50072807A /* 22.json in Resources */ = {isa = PBXBuildFile; fileRef = BC759444272882E30072807A /* 22.json */; };
-		BC759452272882E50072807A /* 24.json in Resources */ = {isa = PBXBuildFile; fileRef = BC759445272882E30072807A /* 24.json */; };
-		BC759453272882E50072807A /* 23..json in Resources */ = {isa = PBXBuildFile; fileRef = BC759446272882E30072807A /* 23..json */; };
-		BC759454272882E50072807A /* 29..json in Resources */ = {isa = PBXBuildFile; fileRef = BC759447272882E40072807A /* 29..json */; };
-		BC759455272882E50072807A /* 28.json in Resources */ = {isa = PBXBuildFile; fileRef = BC759448272882E40072807A /* 28.json */; };
-		BC759456272882E50072807A /* 25..json in Resources */ = {isa = PBXBuildFile; fileRef = BC759449272882E40072807A /* 25..json */; };
-		BC759457272882E50072807A /* 27.json in Resources */ = {isa = PBXBuildFile; fileRef = BC75944A272882E50072807A /* 27.json */; };
-		BC759458272882E50072807A /* 30..json in Resources */ = {isa = PBXBuildFile; fileRef = BC75944B272882E50072807A /* 30..json */; };
+		BC841B9F273AE76000D959E7 /* 18.json in Resources */ = {isa = PBXBuildFile; fileRef = BC841B9E273AE76000D959E7 /* 18.json */; };
+		BC841BEC273B1FBE00D959E7 /* ocdaotxi.json in Resources */ = {isa = PBXBuildFile; fileRef = BC841BEA273B1FBE00D959E7 /* ocdaotxi.json */; };
+		BC841BEF273B225D00D959E7 /* ocdaxuti.json in Resources */ = {isa = PBXBuildFile; fileRef = BC841BEE273B225D00D959E7 /* ocdaxuti.json */; };
 		BC87500B2700ACB2006B7834 /* fetchName.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC87500A2700ACB2006B7834 /* fetchName.swift */; };
 		BC87501027022954006B7834 /* taskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC87500F27022954006B7834 /* taskViewController.swift */; };
+		BC90135E273D93A800012180 /* 06.json in Resources */ = {isa = PBXBuildFile; fileRef = BC901347273D93A700012180 /* 06.json */; };
+		BC90135F273D93A800012180 /* 021.json in Resources */ = {isa = PBXBuildFile; fileRef = BC901348273D93A700012180 /* 021.json */; };
+		BC901360273D93A800012180 /* 013.json in Resources */ = {isa = PBXBuildFile; fileRef = BC901349273D93A700012180 /* 013.json */; };
+		BC901361273D93A800012180 /* 05.json in Resources */ = {isa = PBXBuildFile; fileRef = BC90134A273D93A700012180 /* 05.json */; };
+		BC901362273D93A800012180 /* 017.json in Resources */ = {isa = PBXBuildFile; fileRef = BC90134B273D93A700012180 /* 017.json */; };
+		BC901363273D93A800012180 /* 012.json in Resources */ = {isa = PBXBuildFile; fileRef = BC90134C273D93A700012180 /* 012.json */; };
+		BC901364273D93A800012180 /* 019.json in Resources */ = {isa = PBXBuildFile; fileRef = BC90134D273D93A700012180 /* 019.json */; };
+		BC901365273D93A800012180 /* 010..json in Resources */ = {isa = PBXBuildFile; fileRef = BC90134E273D93A700012180 /* 010..json */; };
+		BC901366273D93A800012180 /* 020.json in Resources */ = {isa = PBXBuildFile; fileRef = BC90134F273D93A700012180 /* 020.json */; };
+		BC901367273D93A800012180 /* 03..json in Resources */ = {isa = PBXBuildFile; fileRef = BC901350273D93A700012180 /* 03..json */; };
+		BC901368273D93A800012180 /* 011..json in Resources */ = {isa = PBXBuildFile; fileRef = BC901351273D93A700012180 /* 011..json */; };
+		BC901369273D93A800012180 /* 04.json in Resources */ = {isa = PBXBuildFile; fileRef = BC901352273D93A700012180 /* 04.json */; };
+		BC90136A273D93A800012180 /* 014.json in Resources */ = {isa = PBXBuildFile; fileRef = BC901353273D93A700012180 /* 014.json */; };
+		BC90136B273D93A800012180 /* 016.json in Resources */ = {isa = PBXBuildFile; fileRef = BC901354273D93A700012180 /* 016.json */; };
+		BC90136D273D93A800012180 /* 018.json in Resources */ = {isa = PBXBuildFile; fileRef = BC901356273D93A700012180 /* 018.json */; };
+		BC90136E273D93A800012180 /* 09..json in Resources */ = {isa = PBXBuildFile; fileRef = BC901357273D93A700012180 /* 09..json */; };
+		BC90136F273D93A800012180 /* 07.json in Resources */ = {isa = PBXBuildFile; fileRef = BC901358273D93A700012180 /* 07.json */; };
+		BC901370273D93A800012180 /* 02.json in Resources */ = {isa = PBXBuildFile; fileRef = BC901359273D93A700012180 /* 02.json */; };
+		BC901371273D93A800012180 /* 08..json in Resources */ = {isa = PBXBuildFile; fileRef = BC90135A273D93A700012180 /* 08..json */; };
+		BC901372273D93A800012180 /* 015.json in Resources */ = {isa = PBXBuildFile; fileRef = BC90135B273D93A700012180 /* 015.json */; };
+		BC901376273D945D00012180 /* enumRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC901375273D945D00012180 /* enumRoot.swift */; };
+		BC901396273D952A00012180 /* 32.json in Resources */ = {isa = PBXBuildFile; fileRef = BC901389273D952A00012180 /* 32.json */; };
+		BC901397273D952A00012180 /* 36.json in Resources */ = {isa = PBXBuildFile; fileRef = BC90138A273D952A00012180 /* 36.json */; };
+		BC901398273D952A00012180 /* 42.json in Resources */ = {isa = PBXBuildFile; fileRef = BC90138B273D952A00012180 /* 42.json */; };
+		BC901399273D952A00012180 /* 35..json in Resources */ = {isa = PBXBuildFile; fileRef = BC90138C273D952A00012180 /* 35..json */; };
+		BC90139A273D952A00012180 /* 31.json in Resources */ = {isa = PBXBuildFile; fileRef = BC90138D273D952A00012180 /* 31.json */; };
+		BC90139B273D952A00012180 /* 37.json in Resources */ = {isa = PBXBuildFile; fileRef = BC90138E273D952A00012180 /* 37.json */; };
+		BC90139C273D952A00012180 /* 38..json in Resources */ = {isa = PBXBuildFile; fileRef = BC90138F273D952A00012180 /* 38..json */; };
+		BC90139D273D952A00012180 /* 40.json in Resources */ = {isa = PBXBuildFile; fileRef = BC901390273D952A00012180 /* 40.json */; };
+		BC90139E273D952A00012180 /* 39.json in Resources */ = {isa = PBXBuildFile; fileRef = BC901391273D952A00012180 /* 39.json */; };
+		BC90139F273D952A00012180 /* 34..json in Resources */ = {isa = PBXBuildFile; fileRef = BC901392273D952A00012180 /* 34..json */; };
+		BC9013A0273D952A00012180 /* 41.json in Resources */ = {isa = PBXBuildFile; fileRef = BC901393273D952A00012180 /* 41.json */; };
+		BC9013A1273D952A00012180 /* 33.json in Resources */ = {isa = PBXBuildFile; fileRef = BC901394273D952A00012180 /* 33.json */; };
+		BC9013A2273D952A00012180 /* 43.json in Resources */ = {isa = PBXBuildFile; fileRef = BC901395273D952A00012180 /* 43.json */; };
 		BCA56CA127270C4E00780883 /* 1.json in Resources */ = {isa = PBXBuildFile; fileRef = BCA56CA027270C4E00780883 /* 1.json */; };
 		BCA56CA32727136300780883 /* beforeSession.json in Resources */ = {isa = PBXBuildFile; fileRef = BCA56CA22727136200780883 /* beforeSession.json */; };
 		BCB8C5DB26FBA4D200E00BB4 /* DemoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB8C5D926FBA4D200E00BB4 /* DemoTableViewCell.swift */; };
@@ -79,6 +113,16 @@
 /* Begin PBXFileReference section */
 		5DF957FCA12361BFB519DDE3 /* Pods-NeuroPilot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeuroPilot.release.xcconfig"; path = "Target Support Files/Pods-NeuroPilot/Pods-NeuroPilot.release.xcconfig"; sourceTree = "<group>"; };
 		BA5D2B48F69B2F714F0045AD /* Pods_NeuroPilot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NeuroPilot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC113587272EED9E00775A46 /* 23..json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = 23..json; path = "../../../../../../../../Downloads/ბოლო ჩასწორება/პრობლემა 1/2 სესია/23..json"; sourceTree = "<group>"; };
+		BC113588272EED9E00775A46 /* 27.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = 27.json; path = "../../../../../../../../Downloads/ბოლო ჩასწორება/პრობლემა 1/2 სესია/27.json"; sourceTree = "<group>"; };
+		BC11358A272EED9E00775A46 /* 30..json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = 30..json; path = "../../../../../../../../Downloads/ბოლო ჩასწორება/პრობლემა 1/2 სესია/30..json"; sourceTree = "<group>"; };
+		BC11358B272EED9E00775A46 /* 19.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = 19.json; path = "../../../../../../../../Downloads/ბოლო ჩასწორება/პრობლემა 1/2 სესია/19.json"; sourceTree = "<group>"; };
+		BC11358C272EED9E00775A46 /* 20.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = 20.json; path = "../../../../../../../../Downloads/ბოლო ჩასწორება/პრობლემა 1/2 სესია/20.json"; sourceTree = "<group>"; };
+		BC11358D272EED9E00775A46 /* 21..json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = 21..json; path = "../../../../../../../../Downloads/ბოლო ჩასწორება/პრობლემა 1/2 სესია/21..json"; sourceTree = "<group>"; };
+		BC11358F272EED9F00775A46 /* 29..json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = 29..json; path = "../../../../../../../../Downloads/ბოლო ჩასწორება/პრობლემა 1/2 სესია/29..json"; sourceTree = "<group>"; };
+		BC113590272EED9F00775A46 /* 26.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = 26.json; path = "../../../../../../../../Downloads/ბოლო ჩასწორება/პრობლემა 1/2 სესია/26.json"; sourceTree = "<group>"; };
+		BC113591272EED9F00775A46 /* 22.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = 22.json; path = "../../../../../../../../Downloads/ბოლო ჩასწორება/პრობლემა 1/2 სესია/22.json"; sourceTree = "<group>"; };
+		BC113592272EED9F00775A46 /* 28.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = 28.json; path = "../../../../../../../../Downloads/ბოლო ჩასწორება/პრობლემა 1/2 სესია/28.json"; sourceTree = "<group>"; };
 		BC15BEE827043CCF005CA03F /* loginOrRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginOrRegisterViewController.swift; sourceTree = "<group>"; };
 		BC15BEED27043D80005CA03F /* startTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = startTestViewController.swift; sourceTree = "<group>"; };
 		BC15BEEF27043DE6005CA03F /* QuestionsPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsPageViewController.swift; sourceTree = "<group>"; };
@@ -112,21 +156,45 @@
 		BC75942B27285F180072807A /* 3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 3.json; sourceTree = "<group>"; };
 		BC75942C27285F180072807A /* 15..json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 15..json; sourceTree = "<group>"; };
 		BC75942D27285F180072807A /* 17..json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 17..json; sourceTree = "<group>"; };
-		BC75943F272882E10072807A /* 21..json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 21..json; sourceTree = "<group>"; };
-		BC759440272882E20072807A /* 26.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 26.json; sourceTree = "<group>"; };
-		BC759441272882E20072807A /* 19.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 19.json; sourceTree = "<group>"; };
-		BC759442272882E20072807A /* 18.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 18.json; sourceTree = "<group>"; };
-		BC759443272882E30072807A /* 20.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 20.json; sourceTree = "<group>"; };
-		BC759444272882E30072807A /* 22.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 22.json; sourceTree = "<group>"; };
-		BC759445272882E30072807A /* 24.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 24.json; sourceTree = "<group>"; };
-		BC759446272882E30072807A /* 23..json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 23..json; sourceTree = "<group>"; };
-		BC759447272882E40072807A /* 29..json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 29..json; sourceTree = "<group>"; };
-		BC759448272882E40072807A /* 28.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 28.json; sourceTree = "<group>"; };
-		BC759449272882E40072807A /* 25..json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 25..json; sourceTree = "<group>"; };
-		BC75944A272882E50072807A /* 27.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 27.json; sourceTree = "<group>"; };
-		BC75944B272882E50072807A /* 30..json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 30..json; sourceTree = "<group>"; };
+		BC841B9E273AE76000D959E7 /* 18.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 18.json; sourceTree = "<group>"; };
+		BC841BEA273B1FBE00D959E7 /* ocdaotxi.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ocdaotxi.json; sourceTree = "<group>"; };
+		BC841BEE273B225D00D959E7 /* ocdaxuti.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ocdaxuti.json; sourceTree = "<group>"; };
 		BC87500A2700ACB2006B7834 /* fetchName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fetchName.swift; sourceTree = "<group>"; };
 		BC87500F27022954006B7834 /* taskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = taskViewController.swift; sourceTree = "<group>"; };
+		BC901347273D93A700012180 /* 06.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = 06.json; path = "JSON/Problem 2 Season 1/06.json"; sourceTree = SOURCE_ROOT; };
+		BC901348273D93A700012180 /* 021.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = 021.json; path = "JSON/Problem 2 Season 1/021.json"; sourceTree = SOURCE_ROOT; };
+		BC901349273D93A700012180 /* 013.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = 013.json; path = "JSON/Problem 2 Season 1/013.json"; sourceTree = SOURCE_ROOT; };
+		BC90134A273D93A700012180 /* 05.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = 05.json; path = "JSON/Problem 2 Season 1/05.json"; sourceTree = SOURCE_ROOT; };
+		BC90134B273D93A700012180 /* 017.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = 017.json; path = "JSON/Problem 2 Season 1/017.json"; sourceTree = SOURCE_ROOT; };
+		BC90134C273D93A700012180 /* 012.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = 012.json; path = "JSON/Problem 2 Season 1/012.json"; sourceTree = SOURCE_ROOT; };
+		BC90134D273D93A700012180 /* 019.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = 019.json; path = "JSON/Problem 2 Season 1/019.json"; sourceTree = SOURCE_ROOT; };
+		BC90134E273D93A700012180 /* 010..json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = 010..json; path = "JSON/Problem 2 Season 1/010..json"; sourceTree = SOURCE_ROOT; };
+		BC90134F273D93A700012180 /* 020.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = 020.json; path = "JSON/Problem 2 Season 1/020.json"; sourceTree = SOURCE_ROOT; };
+		BC901350273D93A700012180 /* 03..json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = 03..json; path = "JSON/Problem 2 Season 1/03..json"; sourceTree = SOURCE_ROOT; };
+		BC901351273D93A700012180 /* 011..json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = 011..json; path = "JSON/Problem 2 Season 1/011..json"; sourceTree = SOURCE_ROOT; };
+		BC901352273D93A700012180 /* 04.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = 04.json; path = "JSON/Problem 2 Season 1/04.json"; sourceTree = SOURCE_ROOT; };
+		BC901353273D93A700012180 /* 014.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = 014.json; path = "JSON/Problem 2 Season 1/014.json"; sourceTree = SOURCE_ROOT; };
+		BC901354273D93A700012180 /* 016.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = 016.json; path = "JSON/Problem 2 Season 1/016.json"; sourceTree = SOURCE_ROOT; };
+		BC901356273D93A700012180 /* 018.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = 018.json; path = "JSON/Problem 2 Season 1/018.json"; sourceTree = SOURCE_ROOT; };
+		BC901357273D93A700012180 /* 09..json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = 09..json; path = "JSON/Problem 2 Season 1/09..json"; sourceTree = SOURCE_ROOT; };
+		BC901358273D93A700012180 /* 07.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = 07.json; path = "JSON/Problem 2 Season 1/07.json"; sourceTree = SOURCE_ROOT; };
+		BC901359273D93A700012180 /* 02.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = 02.json; path = "JSON/Problem 2 Season 1/02.json"; sourceTree = SOURCE_ROOT; };
+		BC90135A273D93A700012180 /* 08..json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = 08..json; path = "JSON/Problem 2 Season 1/08..json"; sourceTree = SOURCE_ROOT; };
+		BC90135B273D93A700012180 /* 015.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = 015.json; path = "JSON/Problem 2 Season 1/015.json"; sourceTree = SOURCE_ROOT; };
+		BC901375273D945D00012180 /* enumRoot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = enumRoot.swift; path = NeuroPilot/Animations/Problem2/AllSessions/enumRoot.swift; sourceTree = SOURCE_ROOT; };
+		BC901389273D952A00012180 /* 32.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = 32.json; path = "JSON/Problem 1/Session3/32.json"; sourceTree = SOURCE_ROOT; };
+		BC90138A273D952A00012180 /* 36.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = 36.json; path = "JSON/Problem 1/Session3/36.json"; sourceTree = SOURCE_ROOT; };
+		BC90138B273D952A00012180 /* 42.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = 42.json; path = "JSON/Problem 1/Session3/42.json"; sourceTree = SOURCE_ROOT; };
+		BC90138C273D952A00012180 /* 35..json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = 35..json; path = "JSON/Problem 1/Session3/35..json"; sourceTree = SOURCE_ROOT; };
+		BC90138D273D952A00012180 /* 31.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = 31.json; path = "JSON/Problem 1/Session3/31.json"; sourceTree = SOURCE_ROOT; };
+		BC90138E273D952A00012180 /* 37.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = 37.json; path = "JSON/Problem 1/Session3/37.json"; sourceTree = SOURCE_ROOT; };
+		BC90138F273D952A00012180 /* 38..json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = 38..json; path = "JSON/Problem 1/Session3/38..json"; sourceTree = SOURCE_ROOT; };
+		BC901390273D952A00012180 /* 40.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = 40.json; path = "JSON/Problem 1/Session3/40.json"; sourceTree = SOURCE_ROOT; };
+		BC901391273D952A00012180 /* 39.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = 39.json; path = "JSON/Problem 1/Session3/39.json"; sourceTree = SOURCE_ROOT; };
+		BC901392273D952A00012180 /* 34..json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = 34..json; path = "JSON/Problem 1/Session3/34..json"; sourceTree = SOURCE_ROOT; };
+		BC901393273D952A00012180 /* 41.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = 41.json; path = "JSON/Problem 1/Session3/41.json"; sourceTree = SOURCE_ROOT; };
+		BC901394273D952A00012180 /* 33.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = 33.json; path = "JSON/Problem 1/Session3/33.json"; sourceTree = SOURCE_ROOT; };
+		BC901395273D952A00012180 /* 43.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = 43.json; path = "JSON/Problem 1/Session3/43.json"; sourceTree = SOURCE_ROOT; };
 		BCA56CA027270C4E00780883 /* 1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 1.json; sourceTree = "<group>"; };
 		BCA56CA22727136200780883 /* beforeSession.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = beforeSession.json; sourceTree = "<group>"; };
 		BCB5DE7E26E5561E0057AC02 /* NeuroPilot.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NeuroPilot.entitlements; sourceTree = "<group>"; };
@@ -178,6 +246,26 @@
 				BA5D2B48F69B2F714F0045AD /* Pods_NeuroPilot.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC11356D272EDA2A00775A46 /* Session3 */ = {
+			isa = PBXGroup;
+			children = (
+				BC90138D273D952A00012180 /* 31.json */,
+				BC901389273D952A00012180 /* 32.json */,
+				BC901394273D952A00012180 /* 33.json */,
+				BC901392273D952A00012180 /* 34..json */,
+				BC90138C273D952A00012180 /* 35..json */,
+				BC90138A273D952A00012180 /* 36.json */,
+				BC90138E273D952A00012180 /* 37.json */,
+				BC90138F273D952A00012180 /* 38..json */,
+				BC901391273D952A00012180 /* 39.json */,
+				BC901390273D952A00012180 /* 40.json */,
+				BC901393273D952A00012180 /* 41.json */,
+				BC90138B273D952A00012180 /* 42.json */,
+				BC901395273D952A00012180 /* 43.json */,
+			);
+			path = Session3;
 			sourceTree = "<group>";
 		};
 		BC15BEEA27043D06005CA03F /* onBoarding */ = {
@@ -277,19 +365,18 @@
 		BC75943E272882BD0072807A /* Session2 */ = {
 			isa = PBXGroup;
 			children = (
-				BC759442272882E20072807A /* 18.json */,
-				BC759441272882E20072807A /* 19.json */,
-				BC759443272882E30072807A /* 20.json */,
-				BC75943F272882E10072807A /* 21..json */,
-				BC759444272882E30072807A /* 22.json */,
-				BC759446272882E30072807A /* 23..json */,
-				BC759445272882E30072807A /* 24.json */,
-				BC759449272882E40072807A /* 25..json */,
-				BC759440272882E20072807A /* 26.json */,
-				BC75944A272882E50072807A /* 27.json */,
-				BC759448272882E40072807A /* 28.json */,
-				BC759447272882E40072807A /* 29..json */,
-				BC75944B272882E50072807A /* 30..json */,
+				BC11358B272EED9E00775A46 /* 19.json */,
+				BC11358C272EED9E00775A46 /* 20.json */,
+				BC11358D272EED9E00775A46 /* 21..json */,
+				BC113591272EED9F00775A46 /* 22.json */,
+				BC113587272EED9E00775A46 /* 23..json */,
+				BC841BEA273B1FBE00D959E7 /* ocdaotxi.json */,
+				BC841BEE273B225D00D959E7 /* ocdaxuti.json */,
+				BC113590272EED9F00775A46 /* 26.json */,
+				BC113588272EED9E00775A46 /* 27.json */,
+				BC113592272EED9F00775A46 /* 28.json */,
+				BC11358F272EED9F00775A46 /* 29..json */,
+				BC11358A272EED9E00775A46 /* 30..json */,
 			);
 			path = Session2;
 			sourceTree = "<group>";
@@ -299,14 +386,51 @@
 			children = (
 				BC583BF52703877A00FE5742 /* tableViewClass.swift */,
 				BC87500A2700ACB2006B7834 /* fetchName.swift */,
+				BC901375273D945D00012180 /* enumRoot.swift */,
 			);
 			path = "funcs & Classes";
+			sourceTree = "<group>";
+		};
+		BC88C4B8272C700E00139C05 /* Problem2 */ = {
+			isa = PBXGroup;
+			children = (
+				BC88C4B9272C701700139C05 /* AllSessions */,
+			);
+			path = Problem2;
+			sourceTree = "<group>";
+		};
+		BC88C4B9272C701700139C05 /* AllSessions */ = {
+			isa = PBXGroup;
+			children = (
+				BC901359273D93A700012180 /* 02.json */,
+				BC901350273D93A700012180 /* 03..json */,
+				BC901352273D93A700012180 /* 04.json */,
+				BC90134A273D93A700012180 /* 05.json */,
+				BC901347273D93A700012180 /* 06.json */,
+				BC901358273D93A700012180 /* 07.json */,
+				BC90135A273D93A700012180 /* 08..json */,
+				BC901357273D93A700012180 /* 09..json */,
+				BC90134E273D93A700012180 /* 010..json */,
+				BC901351273D93A700012180 /* 011..json */,
+				BC90134C273D93A700012180 /* 012.json */,
+				BC901349273D93A700012180 /* 013.json */,
+				BC901353273D93A700012180 /* 014.json */,
+				BC90135B273D93A700012180 /* 015.json */,
+				BC901354273D93A700012180 /* 016.json */,
+				BC90134B273D93A700012180 /* 017.json */,
+				BC901356273D93A700012180 /* 018.json */,
+				BC90134D273D93A700012180 /* 019.json */,
+				BC90134F273D93A700012180 /* 020.json */,
+				BC901348273D93A700012180 /* 021.json */,
+			);
+			path = AllSessions;
 			sourceTree = "<group>";
 		};
 		BCA56C9F27270C3D00780883 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
 				BCC2341F271A019C0032EB22 /* 79952-successful.json */,
+				BC88C4B8272C700E00139C05 /* Problem2 */,
 				BCA56CA42727136800780883 /* Problem1 */,
 			);
 			path = Animations;
@@ -341,7 +465,9 @@
 				BC75942C27285F180072807A /* 15..json */,
 				BC75942627285F160072807A /* 16.json */,
 				BC75942D27285F180072807A /* 17..json */,
+				BC841B9E273AE76000D959E7 /* 18.json */,
 				BC75943E272882BD0072807A /* Session2 */,
+				BC11356D272EDA2A00775A46 /* Session3 */,
 			);
 			path = Session1;
 			sourceTree = "<group>";
@@ -464,43 +590,76 @@
 				BC5CE50427258F0A00259E26 /* FiraGO-Regular.otf in Resources */,
 				BCF84CEC26D14A2000DC6691 /* LaunchScreen.storyboard in Resources */,
 				BCF84CF426D14A8200DC6691 /* GoogleService-Info.plist in Resources */,
-				BC759451272882E50072807A /* 22.json in Resources */,
+				BC9013A0273D952A00012180 /* 41.json in Resources */,
 				BC75943527285F180072807A /* 9..json in Resources */,
 				BC33E2B226DD50EA00520B84 /* credentials.plist in Resources */,
+				BC901365273D93A800012180 /* 010..json in Resources */,
+				BC90139C273D952A00012180 /* 38..json in Resources */,
+				BC901399273D952A00012180 /* 35..json in Resources */,
+				BC113597272EED9F00775A46 /* 30..json in Resources */,
+				BC901367273D93A800012180 /* 03..json in Resources */,
+				BC90139B273D952A00012180 /* 37.json in Resources */,
 				BC75943927285F180072807A /* 12.json in Resources */,
+				BC90135E273D93A800012180 /* 06.json in Resources */,
+				BC901372273D93A800012180 /* 015.json in Resources */,
+				BC90136D273D93A800012180 /* 018.json in Resources */,
 				BCA56CA32727136300780883 /* beforeSession.json in Resources */,
+				BC113594272EED9F00775A46 /* 23..json in Resources */,
+				BC90136A273D93A800012180 /* 014.json in Resources */,
+				BC90139E273D952A00012180 /* 39.json in Resources */,
 				BCB8C5DC26FBA4D200E00BB4 /* DemoTableViewCell.xib in Resources */,
-				BC759458272882E50072807A /* 30..json in Resources */,
-				BC759454272882E50072807A /* 29..json in Resources */,
+				BC841B9F273AE76000D959E7 /* 18.json in Resources */,
+				BC11359E272EED9F00775A46 /* 22.json in Resources */,
 				BC75943C27285F180072807A /* 15..json in Resources */,
-				BC75944F272882E50072807A /* 18.json in Resources */,
-				BC75944E272882E50072807A /* 19.json in Resources */,
-				BC75944D272882E50072807A /* 26.json in Resources */,
+				BC113598272EED9F00775A46 /* 19.json in Resources */,
 				BC75943227285F180072807A /* 8.json in Resources */,
 				BC75943727285F180072807A /* 5.json in Resources */,
+				BC841BEC273B1FBE00D959E7 /* ocdaotxi.json in Resources */,
+				BC11359D272EED9F00775A46 /* 26.json in Resources */,
 				BCA56CA127270C4E00780883 /* 1.json in Resources */,
+				BC901369273D93A800012180 /* 04.json in Resources */,
+				BC901396273D952A00012180 /* 32.json in Resources */,
 				BC75943027285F180072807A /* 14..json in Resources */,
 				BC75943627285F180072807A /* 16.json in Resources */,
-				BC759450272882E50072807A /* 20.json in Resources */,
+				BC901360273D93A800012180 /* 013.json in Resources */,
+				BC113595272EED9F00775A46 /* 27.json in Resources */,
+				BC901361273D93A800012180 /* 05.json in Resources */,
+				BC90136F273D93A800012180 /* 07.json in Resources */,
+				BC9013A2273D952A00012180 /* 43.json in Resources */,
+				BC901398273D952A00012180 /* 42.json in Resources */,
 				BC33B7C026EBCBBE00912CC6 /* Assets.xcassets in Resources */,
 				BC75943427285F180072807A /* 4.json in Resources */,
-				BC759455272882E50072807A /* 28.json in Resources */,
+				BC90139A273D952A00012180 /* 31.json in Resources */,
+				BC901362273D93A800012180 /* 017.json in Resources */,
 				BC75943A27285F180072807A /* 10..json in Resources */,
+				BC11359A272EED9F00775A46 /* 21..json in Resources */,
+				BC9013A1273D952A00012180 /* 33.json in Resources */,
 				BC75943827285F180072807A /* 2.json in Resources */,
-				BC759456272882E50072807A /* 25..json in Resources */,
 				BC75943D27285F180072807A /* 17..json in Resources */,
-				BC759457272882E50072807A /* 27.json in Resources */,
 				BC75943327285F180072807A /* 6..json in Resources */,
+				BC90136E273D93A800012180 /* 09..json in Resources */,
 				BCC23420271A019C0032EB22 /* 79952-successful.json in Resources */,
 				BC75942F27285F180072807A /* 13..json in Resources */,
 				BC75943B27285F180072807A /* 3.json in Resources */,
+				BC901368273D93A800012180 /* 011..json in Resources */,
+				BC901366273D93A800012180 /* 020.json in Resources */,
 				BC75942E27285F180072807A /* 11.json in Resources */,
-				BC759453272882E50072807A /* 23..json in Resources */,
+				BC901370273D93A800012180 /* 02.json in Resources */,
+				BC11359F272EED9F00775A46 /* 28.json in Resources */,
+				BC901363273D93A800012180 /* 012.json in Resources */,
 				BC75943127285F180072807A /* 7..json in Resources */,
-				BC75944C272882E50072807A /* 21..json in Resources */,
+				BC901371273D93A800012180 /* 08..json in Resources */,
+				BC11359C272EED9F00775A46 /* 29..json in Resources */,
+				BC113599272EED9F00775A46 /* 20.json in Resources */,
+				BC901364273D93A800012180 /* 019.json in Resources */,
+				BC901397273D952A00012180 /* 36.json in Resources */,
+				BC841BEF273B225D00D959E7 /* ocdaxuti.json in Resources */,
 				BCED66C12718AD6600D8D184 /* DemoCollectionViewCell.xib in Resources */,
 				BC5CE50727258F3900259E26 /* FiraGO-SemiBold.otf in Resources */,
-				BC759452272882E50072807A /* 24.json in Resources */,
+				BC90136B273D93A800012180 /* 016.json in Resources */,
+				BC90135F273D93A800012180 /* 021.json in Resources */,
+				BC90139D273D952A00012180 /* 40.json in Resources */,
+				BC90139F273D952A00012180 /* 34..json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -576,6 +735,7 @@
 				BC15BEF027043DE6005CA03F /* QuestionsPageViewController.swift in Sources */,
 				BCFA8E7127176663001972AD /* PurchasePageViewController.swift in Sources */,
 				BCF84CE426D14A1F00DC6691 /* loginViewController.swift in Sources */,
+				BC901376273D945D00012180 /* enumRoot.swift in Sources */,
 				BC87500B2700ACB2006B7834 /* fetchName.swift in Sources */,
 				BC583BF62703877A00FE5742 /* tableViewClass.swift in Sources */,
 				BCC2341E2719F2E70032EB22 /* BankPageViewController.swift in Sources */,
@@ -738,6 +898,7 @@
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CODE_SIGN_ENTITLEMENTS = NeuroPilot/NeuroPilot.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 3J5J5NZ5HM;
 				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
 				INFOPLIST_FILE = NeuroPilot/Info.plist;
@@ -746,8 +907,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = kakha.NeuroPilot1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -762,6 +926,7 @@
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CODE_SIGN_ENTITLEMENTS = NeuroPilot/NeuroPilot.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 3J5J5NZ5HM;
 				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
 				INFOPLIST_FILE = NeuroPilot/Info.plist;
@@ -770,8 +935,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = kakha.NeuroPilot1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

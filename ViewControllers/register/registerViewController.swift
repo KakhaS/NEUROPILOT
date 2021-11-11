@@ -25,12 +25,12 @@ class registerViewController: UIViewController {
     private let bigLabel: UILabel = {
         let bigLabel = UILabel()
         bigLabel.textColor = .systemBlue
-        bigLabel.text = "Create your account"
-        bigLabel.font = UIFont(name: "Helvetica", size: 26)
+        bigLabel.text = "რეგისტრაცია"
+        bigLabel.font = UIFont(name: "Helvetica", size: 22)
         bigLabel.numberOfLines = 2
-        bigLabel.frame = CGRect(x: UIScreen.main.bounds.width / 6.104,
+        bigLabel.frame = CGRect(x: UIScreen.main.bounds.width / 3.3,
                                 y: UIScreen.main.bounds.height / 6.806,
-                                width: UIScreen.main.bounds.width /  1.089,
+                                width: UIScreen.main.bounds.width /  1.2,
                                 height: UIScreen.main.bounds.height /  6.55)
         return bigLabel
     }()
@@ -54,7 +54,7 @@ class registerViewController: UIViewController {
         let leftView = UIView(frame: CGRect(x: 0.0, y: 0.0, width: 10, height: 0))
         nameField.leftView = leftView
         nameField.leftViewMode = .always
-        nameField.attributedPlaceholder = NSAttributedString(string: "Name", attributes: [NSAttributedString.Key.foregroundColor: UIColor.gray])
+        nameField.attributedPlaceholder = NSAttributedString(string: "სახელი", attributes: [NSAttributedString.Key.foregroundColor: UIColor.gray])
         nameField.clipsToBounds = true
         nameField.frame = CGRect(x: UIScreen.main.bounds.width / 16.175,
                                  y: UIScreen.main.bounds.height / 3.309,
@@ -66,7 +66,7 @@ class registerViewController: UIViewController {
        let emailField = UITextField()
         emailField.borderStyle = .line
         emailField.layer.borderColor = UIColor.systemBlue.cgColor
-        emailField.attributedPlaceholder = NSAttributedString(string: "Name", attributes: [NSAttributedString.Key.foregroundColor: UIColor.gray])
+        emailField.attributedPlaceholder = NSAttributedString(string: "ელ. ფოსტა", attributes: [NSAttributedString.Key.foregroundColor: UIColor.gray])
         emailField.layer.cornerRadius =  5
         emailField.layer.borderWidth = 2
         let leftView = UIView(frame: CGRect(x: 0.0, y: 0.0, width: 10, height: 0))
@@ -88,7 +88,7 @@ class registerViewController: UIViewController {
         let leftView = UIView(frame: CGRect(x: 0.0, y: 0.0, width: 10, height: 0))
         passwordField.leftView = leftView
         passwordField.leftViewMode = .always
-        passwordField.attributedPlaceholder = NSAttributedString(string: "Create Strong Password", attributes: [NSAttributedString.Key.foregroundColor: UIColor.gray])
+        passwordField.attributedPlaceholder = NSAttributedString(string: "პაროლი", attributes: [NSAttributedString.Key.foregroundColor: UIColor.gray])
         passwordField.isSecureTextEntry = true
         passwordField.clipsToBounds = true
         passwordField.frame = CGRect(x: UIScreen.main.bounds.width / 16.175,
@@ -102,7 +102,7 @@ class registerViewController: UIViewController {
         repeatField.borderStyle = .line
    
         repeatField.layer.borderColor = UIColor.systemBlue.cgColor
-        repeatField.attributedPlaceholder = NSAttributedString(string: "Repeat Password", attributes: [NSAttributedString.Key.foregroundColor: UIColor.gray])
+        repeatField.attributedPlaceholder = NSAttributedString(string: "პაროლის გამეორება", attributes: [NSAttributedString.Key.foregroundColor: UIColor.gray])
         repeatField.isSecureTextEntry = true
         repeatField.layer.cornerRadius =  5
         repeatField.layer.borderWidth = 2
@@ -118,7 +118,7 @@ class registerViewController: UIViewController {
     }()
     private let registrationButton: UIButton = {
        let registrationButton = UIButton()
-        registrationButton.setImage(UIImage(named: "registerButton"), for: .normal)
+        registrationButton.setImage(UIImage(named: "registration1"), for: .normal)
         registrationButton.frame = CGRect(x: UIScreen.main.bounds.width / 18.375 ,
                                           y: UIScreen.main.bounds.height / 1.367902,
                                           width: UIScreen.main.bounds.width / 1.1370262,
@@ -179,7 +179,8 @@ class registerViewController: UIViewController {
             "Name" : nameField.text ?? "Name Field Empty"
         ]
         if emailField.text != nil {
-            let filteredEmail = emailField.text!.replacingOccurrences(of: "@gmail.com", with: "")
+            let firstfilter = emailField.text!.replacingOccurrences(of: ".", with: "")
+            let filteredEmail = firstfilter.replacingOccurrences(of: "@", with: "")
             Database.database().reference().child("\(filteredEmail.lowercased())").setValue(object)
         } else {
             return

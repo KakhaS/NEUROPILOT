@@ -8,10 +8,27 @@
 import UIKit
 import Lottie
 
-let animationNames: [String] = [ "1", "2", "3", "4", "5", "6.", "7.", "8", "9.", "10.", "11", "12", "13.", "14.", "15.", "16", "17." ]
-let animationNames2: [String] = [ "18", "19", "20", "21.", "22", "23." , "24", "25.", "26", "27", "28", "29.", "30."]
-let animationTexts: [String] = [ "გთხოვ, მოაახლოვე მარჯვენა ნახევარსფეროს ზედა ცენტრალური ნაწილი.", "დააკვირდი კარგად ზედაპირს და დასვი მასზე „კლდე“.  დიდი, ბუნებრივი,  ნაპრალებით, მიხველ-მოხვეული გზებით. სადღაც შორს ხედავ სინათლესაც.", "შენი სურვილი, რომელიც არის „მე მინდა მეტი სიახლე, ნათელი ფერები ჩემს ცხოვრებაში, მეტის შეძლება“ ამის ასრულებაში დაგეხმაროს ეს კლდე. ხედავ სინათლეს. წარმოიდგინე, რომ ეს სინათლე ისეთი ძალით იწყებს ნათებს, რომ კლდეს ხეთქავს.  ისე, რომ კლდე ნაწილებად იფრქვევა და ქრება.", "კლდის გაქრობის შემდეგ, დააკვირდი კაშკაშა სინათლე, რომელმაც კდე გახეთქა, როგორ გადაიქცევა საშუალო ზომის კაშკაშა სინათლის ბურთად.", "დააკვირდი, როგორ იზრდება სინათლის ბურთი და ენერგია იწყებს მოძრაობას. თითქოს ვიბრირებს.", "ახლა, გთხოვ დააკვირდე მარცხენა ნახევარსფეროს ზედა ცენტრალურ ნაწილს და კარგად მოაახლოვო.", "მარცხენა ნახევარსფეროს ზედაპირზე დასვი „ჩამოსასრიალებელი“, ისეთი ბავშვობაში ან მოზრდილობაში, რომ გინახავს", "ახლა, მინდა გთხოვო შენი სურვილი, რომელიც არის „მე მინდა მეტი სიახლე, ნათელი ფერები ჩემს ცხოვრებაში, მეტის შეძლება“ ამის ასრულებაში დაგეხმაროს ეს ჩამოსასრიალებელი. ხედავ, როგორ იწყებს წყალი ჩამოდინებას ჩამომსასრიალებელზე. დინება ისე მატულობს, რომ ჩამომსასრიალებელს შლის და აქრობს მარცხენა ნახევარსფეროს ზედაპირიდან.", "ახლა დააკვირდი მარცხენა ნახევარსფეროს ზედაპირს და დასვი მასზე მარჯვენა ნახევარსფეროს მსგავსი სინათლის ბურთი.  ორივე ნახევარსფეროზე 2 ერთმანეთის მსგავსი სინათლის ბურთია - ორივე კაშკაშა, ორივე ბურთის შიდა ზედაპირიდან სხივი/ ენერგია გამოდის.", "ახლა მინდა გთხოვო, რომ ორივე სინათლის ბურთს თხოვო შენი სურვილის „მე მინდა მეტი სიახლე, ნათელი ფერები ჩემს ცხოვრებაში, მეტის შეძლება“ თხოვო ერთობლივად შასრულონ შენი სურვილი და დააკვირდი მათი ენერგიები როგორ ერთდება ნახევარსფეროებს შორის გამყოფ ღართან ერთდება, თითქოს ორივეს ენერგია ერთმანეთს უერთდება, მაგრამ მეტად აქტიურია მარჯვენა.", "ახლა, გთხოვ თავის ტვინის ზედა ცენტრალური ზედაპირიდან თავის ტვინის უკან, კეფისკენ ნათხემზე გადავინაცვლოთ.", "ნათხემს კარგად დააკვირდი, ის მოყავისფრო, მშრალი, პატარა, კურკის ფორმისა და ფაქტურისაა.", "გთხოვ, მშრალი და ყავისფერი პატარა კურკა ღია ფერის, რბილ, ჟელატინის მაგვარ მოცულობად გადააქციო.", "ახლა გთხოვ, გადავინაცვლოთ ტვინის სიღრმეში და დავაკვირდეთ ჯალღუზისებრ სხეულს. აღმოსავლურ ფილოსოფიაში მას, „მესამე თვალს“ ეძახიან.", "იგი, პარკუჭში იმოქცეული გამობურცული მასაა, თითქოს ფეთქავს კიდეც, პატარა ზომისაა.", "ახლა გთხოვ, პარკუჭში მოქცეულ მასას შიდა ზედაპირიდან, სიღრმიდან სინათლის ნაკადის წერტილი გააჩინმო და დააკვირდე, როგორ მოედინება სინათლის სხივი ლაზერის სხივის მსგავსად შუბლის შიდა ზედაპირისკენ და ანათებს მას.", "ახლა, შენი ყურადღება კვლავ ნახევარსფეროების ზედაპირისკენ გადაიტანე და კარგად დააკვირდი ორივე ნახევარსფეროზე 2 ერთმანეთის მსგავსი სინათლის ბურთები ისევ როგორ კაშკაშებენ, ორივე ბურთის შიდა ზედაპირიდან სხივი/ ენერგია გამოდის და ნახევარსფეროებს შორის გამყოფ ღართან ერთდება, თითქოს ორივეს ენერგია ერთდება, მაგრამ მეტად აქტიურია მარჯვენა." ]
 class SessionSecondViewController: UIViewController {
+    var selectedRoot = rootController.problem
+//    var selectedRoot = rootController.problem1Session3
+    func enumUsability() {
+        switch selectedRoot {
+        case .problem:
+            setUpAnimation(name: animationNames[clickIndex], text: animationTexts[clickIndex])
+        case .emotional:
+            setUpAnimation(name: animationProblem2[clickIndex], text: animationProblem2Text[clickIndex])
+        case .physical:
+            print("not yet ready")
+        case .problem1Session2:
+            setUpAnimation(name: animationNames2[clickIndex], text: animationTexts2[clickIndex])
+        case .problem1Session3:
+            setUpAnimation(name: animationNames3[clickIndex], text: animationTexts3[clickIndex])
+        case .problem2Session2:
+            setUpAnimation(name: animationProblem2S2[clickIndex], text: animationProblem2TextS2[clickIndex])
+        case .problem2Session3:
+            setUpAnimation(name: animationProblem2S3[clickIndex], text: animationProblem2TextS3[clickIndex])
+        }
+    }
     var clickIndex = 0
     private let homeButton: UIButton = {
         let homeButton = UIButton()
@@ -74,6 +91,7 @@ class SessionSecondViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        enumUsability()
         let backgroundColor = UIColor(red: 255/255.0, green: 252/255.0, blue: 245/255.0, alpha: 1.0)
         view.backgroundColor = backgroundColor
         view.addSubview(homeButton)
@@ -81,12 +99,23 @@ class SessionSecondViewController: UIViewController {
         view.addSubview(mainText)
         view.addSubview(nextButton)
         view.addSubview(muteButton)
-        print(UIScreen.main.bounds.height)
-      setUpAnimation(name: animationNames[clickIndex], text: animationTexts[clickIndex])
     }
     @objc func replayButtonPressed() {
         animationView!.isHidden = true
-        setUpAnimation(name: animationNames[clickIndex], text: animationTexts[clickIndex])
+        if selectedRoot == .problem {
+            setUpAnimation(name: animationNames[clickIndex], text: animationTexts[clickIndex])
+        } else if selectedRoot == .emotional {
+            setUpAnimation(name: animationProblem2[clickIndex], text: animationProblem2Text[clickIndex])
+        } else if selectedRoot == .problem1Session2 {
+            setUpAnimation(name: animationNames2[clickIndex], text: animationTexts2[clickIndex])
+        } else if selectedRoot == .problem1Session3 {
+            setUpAnimation(name: animationNames3[clickIndex], text: animationTexts3[clickIndex])
+        } else if selectedRoot == .problem2Session2 {
+            setUpAnimation(name: animationProblem2S2[clickIndex], text: animationProblem2TextS2[clickIndex])
+        } else if selectedRoot == .problem2Session3 {
+            setUpAnimation(name: animationProblem2S3[clickIndex], text: animationProblem2TextS3[clickIndex])
+        }
+        
       }
   
     @objc func dismissViewController() {
@@ -98,10 +127,28 @@ class SessionSecondViewController: UIViewController {
         clickIndex += 1
         animationView?.isHidden = true
         replayButton.isHidden = true
-        if clickIndex < animationNames.count {
-            setUpAnimation(name: animationNames[clickIndex], text: animationTexts[clickIndex])
-        } else if clickIndex == animationNames.count {
+        if selectedRoot == .problem {
+        
+            buttonClickConfig(quantity: animationNames.count, namesAnimation: animationNames[clickIndex], textAnimation: animationTexts[clickIndex])
+        } else if selectedRoot == .emotional {
+            buttonClickConfig(quantity: animationProblem2.count, namesAnimation: animationProblem2[clickIndex], textAnimation: animationProblem2Text[clickIndex])
+        } else if selectedRoot == .problem1Session2 {
+            buttonClickConfig(quantity: animationNames2.count, namesAnimation: animationNames2[clickIndex], textAnimation: animationTexts2[clickIndex])
+        } else if selectedRoot == .problem1Session3 {
+            buttonClickConfig(quantity: animationNames3.count, namesAnimation: animationNames3[clickIndex], textAnimation: animationTexts3[clickIndex])
+        } else if selectedRoot == .problem2Session2 {
+            buttonClickConfig(quantity: animationProblem2S2.count, namesAnimation: animationProblem2S2[clickIndex], textAnimation: animationProblem2TextS2[clickIndex])
+        } else if selectedRoot == .problem2Session3 {
+            buttonClickConfig(quantity: animationProblem2S3.count, namesAnimation: animationProblem2S3[clickIndex], textAnimation: animationProblem2TextS3[clickIndex])
+        }
+    }
+    
+    func buttonClickConfig(quantity: Int, namesAnimation: String, textAnimation: String) {
+        if clickIndex < quantity - 1 {
+            setUpAnimation(name: namesAnimation, text: textAnimation)
+        } else if clickIndex == quantity - 1  {
             let vc = PurchasePageViewController()
+            vc.whichRoot = selectedRoot
             vc.modalPresentationStyle = .fullScreen
             present(vc, animated: true)
         }

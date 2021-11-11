@@ -51,10 +51,9 @@ class FirstTaskViewController: UIViewController {
     }()
     private let logo: UIImageView = {
         let logo = UIImageView()
-        logo.image = UIImage(named: "circleTask")
-        logo.frame = CGRect(x: (UIScreen.main.bounds.width / 2) - (UIScreen.main.bounds.width / 2.72 / 2),
-                            y: UIScreen.main.bounds.height / 4.29,
-                            width: UIScreen.main.bounds.width / 2.72,
+        logo.frame = CGRect(x: (UIScreen.main.bounds.width / 2) - (UIScreen.main.bounds.width / 3.5 / 2),
+                            y: UIScreen.main.bounds.height / 4.1,
+                            width: UIScreen.main.bounds.width / 3.5,
                             height: UIScreen.main.bounds.height / 5.88)
         return logo
     }()
@@ -75,7 +74,7 @@ class FirstTaskViewController: UIViewController {
        let remarkLabel = UILabel()
         remarkLabel.textAlignment = .center
         remarkLabel.numberOfLines = 1
-        remarkLabel.text = "*პრობლემის დაძლევის კურსი სამსესიანია."
+        remarkLabel.text = "პრობლემის დაძლევის კურსი სამსესიანია."
         remarkLabel.font = UIFont(name: "FiraGO-Regular", size: 10)
         remarkLabel.textColor = UIColor(red: 36/134.0, green: 14/89.0, blue: 70/165.0, alpha: 1.0)
         remarkLabel.frame = CGRect(x: (UIScreen.main.bounds.width / 2) - (UIScreen.main.bounds.width / 1.32 / 2),
@@ -132,16 +131,18 @@ class FirstTaskViewController: UIViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(false)
-        
         if indexTag == 0 {
+            logo.image = UIImage(named: "physicalIcon")
             taskTitle.text = "მარცხის სცენარებზე ფიქრის ჩანაცვლება გამარჯვებული ადამიანის აზროვნებით "
-            descriptionLabel.text = "მიმართვა: ზედმეტი კონცენტაცია იმაზე თუ რას ფიქრობენ სხვები (მწვრთნელი, თანაგუნდელი, მშობელი, მაყურებელი და ა.შ.) თქვენზე, ანუ თამაშის პროცესში სხვისი აზრების კითხვა, სპორტსმენის შესაძლებლობების დაქვეითებას იწვევს. საკუთარი თავით უკმაყოფილება და მარცხის სცენარებზე წინასწარ ფიქრის კასკადი იწყება, რასაც თვითკრიტიკისა და სხვათა ზეწოლისგან თავდასაცავად იყენებთ. საკუთარი შესაძლებლობების უკეთ წარდგენა კი, მხოლოდ სხვისი აზრების კითხვის და წარუმატებლობის შიშის სცენარების გარეშეა შესაძლებელი."
+            descriptionLabel.text = "ზედმეტი კონვენტრაცია იმაზე თუ რას ფიქრობენ სხვები (მწვრთნელი, თანაგუნდელი, მშობელი, მაყურებელი და ა.შ.) თქვენზე, ანუ თამაშის პროცესში სხვისი აზრების კითხვა, სპორტსმენის შესაძლებლობების დაქვეითებას იწვევს. საკუთარი თავით უკმაყოფილება და მარცხის სცენარებზე წინასწარ ფიქრის კასკადი იწყება, რასაც თვითკრიტიკისა და სხვათა ზეწოლისგან თავდასაცავად იყენებთ. საკუთარი შესაძლებლობების უკეთ წარდგენა კი, მხოლოდ სხვისი აზრების კითხვის და წარუმატებლობის შიშის სცენარების გარეშეა შესაძლებელი."
             
         } else if indexTag == 1 {
+            logo.image = UIImage(named: "problemIcon")
                 taskTitle.text = "ემოციური წონასწორობის და კონცენტრაციის გაძლიერება"
             descriptionLabel.text = "სპორტული კარიერა  640-ზე მეტი განსხვავებული დადებითი და უარყოფითი სტრესორით ხასიათდება. ადვილი არ არის ემოციების გაკონტროლება და სიმშვიდის შენარჩუნება შეჯიბრის დროს, თუმცა თამაშის გონებრივ-ემოციური კონტროლი სპორტული განვითარებისათვის უკიდურესად აუცილებელია. როდესაც ფიზიკურად ყველა საჭირო ინსტრუმენტი გაქვთ, რომ იყოთ საუკეთესო, მაგრამ ემოციური დისბალანსი გიშლით ხელს, ერთ-ერთი მიზეზი მრავალი აღმასვლის და ვარდნის შედეგად ემოციური კონტროლს შესუსტებაა, მაგრამ ყველა დიდი სპორტსმენის სურვილი გაწონასწორებული მდგომარეობის შენარჩუნებაა"
             remarkLabel.isHidden = true
             } else if indexTag == 2 {
+                logo.image = UIImage(named: "problemIcon")
                 taskTitle.text = "ფიზიკური ტრავმის შიშის დაძლევა"
                 descriptionLabel.text = "სპორტულ ტრავმას სპორტსმენისთვის აქვს როგორც ფიზიკური, ასევე ფსიქოლოგიური შედეგები. პოსტ-დაზიანების საერთო ფსიქოლოგიური პასუხი არის გაზრდილი შიში ხელახალი დაზიანებისა. შიშის თავიდან აცილებას შეუძლია მნიშვნელოვანი როლი შეასრულოს დაზიანებისადმი ადაპტირებულ რეაქციებში. დაშავებულ სპორტსმენებში ტკივილთან დაკავშირებული შიში ან შიშის თავიდან აცილება მნიშვნელოვან გავლენას ახდენს, ვარჯიშის და თამაშის დროს სხეულის რეაქციებზე, რაც ახალი ტრავმის მიზეზი ან ტრავმის მიღებისადმი გადაჭარბებული სიფრთხილის მიზეზი ხდება."
                 remarkLabel.isHidden = true

@@ -23,19 +23,19 @@ class loginViaUsername: UIViewController {
     }()
     private let loginText: UILabel = {
        let loginText = UILabel()
-        loginText.text = "Log in to your account"
+        loginText.text = "შესვლა"
         loginText.textColor = .black
         loginText.textAlignment = .left
         loginText.font = UIFont(name: "FiraGO-Regular", size: 18)
-        loginText.frame = CGRect(x: UIScreen.main.bounds.width / 23.4,
-                                 y: UIScreen.main.bounds.height / 6.6 ,
+        loginText.frame = CGRect(x: UIScreen.main.bounds.width / 2.5 ,
+                                 y: UIScreen.main.bounds.height / 6.8 ,
                                  width: UIScreen.main.bounds.width / 1.3 ,
-                                 height: UIScreen.main.bounds.width / 18)
+                                 height: UIScreen.main.bounds.width / 8)
         return loginText
     }()
     private let emailTextField: UITextField = {
        let emaiLTextField = UITextField()
-        emaiLTextField.attributedPlaceholder = NSAttributedString(string: "Email", attributes: [NSAttributedString.Key.foregroundColor: UIColor.gray])
+        emaiLTextField.attributedPlaceholder = NSAttributedString(string: "ელ. ფოსტა", attributes: [NSAttributedString.Key.foregroundColor: UIColor.gray])
         emaiLTextField.textColor = .black
         emaiLTextField.layer.cornerRadius =  2
         emaiLTextField.layer.borderColor = UIColor.black.cgColor
@@ -59,7 +59,7 @@ class loginViaUsername: UIViewController {
         passworedField.leftViewMode = .always
         passworedField.clipsToBounds = true
         passworedField.isSecureTextEntry = true
-        passworedField.attributedPlaceholder = NSAttributedString(string: "Password", attributes: [NSAttributedString.Key.foregroundColor: UIColor.gray])
+        passworedField.attributedPlaceholder = NSAttributedString(string: "პაროლი", attributes: [NSAttributedString.Key.foregroundColor: UIColor.gray])
         passworedField.textColor = .black
         passworedField.frame = CGRect(x: (UIScreen.main.bounds.width / 2) - (UIScreen.main.bounds.width / 1.1 / 2),
                                       y: UIScreen.main.bounds.height / 3,
@@ -69,7 +69,7 @@ class loginViaUsername: UIViewController {
     }()
     private let forgotPasswordButton: UIButton = {
        let forgotPasswordButton = UIButton()
-        forgotPasswordButton.setTitle("Forgot password?", for: .normal)
+        forgotPasswordButton.setTitle("დაგავიწყდა პაროლი?", for: .normal)
         forgotPasswordButton.setTitleColor(.black, for: .normal)
         forgotPasswordButton.alpha = 0.4
         forgotPasswordButton.titleLabel?.font = UIFont(name: "Helvetica", size: 12)
@@ -82,7 +82,7 @@ class loginViaUsername: UIViewController {
     }()
     private let loginButton: UIButton = {
        let loginButton = UIButton()
-        loginButton.setImage(UIImage(named: "loginPhoto"), for: .normal)
+        loginButton.setImage(UIImage(named: "shesvla"), for: .normal)
         loginButton.frame = CGRect(x: (UIScreen.main.bounds.width / 2) - (UIScreen.main.bounds.width / 1.1 / 2),
                                    y: UIScreen.main.bounds.height / 2,
                                    width: UIScreen.main.bounds.width / 1.1,
@@ -117,7 +117,7 @@ class loginViaUsername: UIViewController {
     }()
     private let newUserButton: UIButton = {
        let newUserButton = UIButton()
-        newUserButton.setTitle("New User? Sign Up", for: .normal)
+        newUserButton.setTitle("რეგისტრაცია", for: .normal)
         newUserButton.setTitleColor(.black, for: .normal)
         newUserButton.frame = CGRect(x: (UIScreen.main.bounds.width / 2) - (UIScreen.main.bounds.width / 2.3 / 2),
                                      y: UIScreen.main.bounds.height / 1.1,
@@ -162,8 +162,8 @@ class loginViaUsername: UIViewController {
         view.addSubview(loginButton)
         view.addSubview(orImage)
         view.addSubview(backButton)
-        view.addSubview(googleButton)
-        view.addSubview(appleButton)
+//        view.addSubview(googleButton)
+//        view.addSubview(appleButton)
         view.addSubview(newUserButton)
         view.addSubview(errorPassword)
         errorPassword.isHidden = true
@@ -192,6 +192,10 @@ class loginViaUsername: UIViewController {
             }
         }
         }
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
+
     @objc func forgotPasswordPressed() {
         let vc = forgotPasswordViewController()
         vc.modalPresentationStyle = .fullScreen
@@ -203,6 +207,7 @@ class loginViaUsername: UIViewController {
         present(alert, animated: false, completion: nil)
     }
     }
+
 extension loginViaUsername: GIDSignInDelegate {
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
         if error == nil {
@@ -212,14 +217,10 @@ extension loginViaUsername: GIDSignInDelegate {
             let username = user.profile.name ?? "NoName"
             let email = user.profile.email ?? "No Email"
             writeData(email: email, name: username)
-           
         } else {
            return
             print("Error occured")
         }
-    }
-    @objc func dismissKeyboard() {
-        view.endEditing(true)
     }
 }
 

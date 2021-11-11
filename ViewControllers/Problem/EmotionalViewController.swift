@@ -162,7 +162,9 @@ class EmotionalViewController: UIViewController, UITableViewDelegate, UITableVie
         tableView.reloadData()
     }
     @objc func nextButtonPressed() {
-        presentViewController(myView: SessionViewController())
-            SessionViewController().identification = "Emotional"
+        let vc = SessionViewController()
+        presentViewController(myView: vc)
+        vc.currentRoot = .emotional
+        vc.enumUsability()
     }
 }

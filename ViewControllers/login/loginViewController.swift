@@ -25,37 +25,38 @@ class loginViewController: UIViewController {
     }()
     private let signUpLabel: UILabel = {
        let signUpLabel = UILabel()
-        signUpLabel.text = "Sign Up"
+        signUpLabel.text = "ავტორიზაცია"
         signUpLabel.textColor = .white
-        signUpLabel.font = UIFont(name: "Helvetica", size: 40)
-        signUpLabel.frame = CGRect(x: UIScreen.main.bounds.width / 3.05,
-            y: UIScreen.main.bounds.height / 3.089,
-            width: UIScreen.main.bounds.width / 1.932857 ,
-            height: UIScreen.main.bounds.height / 24.8235)
+        signUpLabel.font = UIFont(name: "FiraGO-SemiBold", size: 20)
+        signUpLabel.frame = CGRect(x: UIScreen.main.bounds.width / 3 ,
+                                   y: UIScreen.main.bounds.height / 3.2,
+                                   width: UIScreen.main.bounds.width / 1.63,
+            height: UIScreen.main.bounds.height / 24.6)
         return signUpLabel
     }()
     private let greetingText: UILabel = {
         let greetingText = UILabel()
         let textColor = UIColor(red: 255/255.0, green: 255/255.0, blue: 255/255.0, alpha: 0.7)
         greetingText.textColor = textColor
-        greetingText.text = "I’m an early bird and I’m a night owl so I’m wise and I have worms."
+        greetingText.text = "მე მიყვარს ჩემი გონება!  ის სწრაფია და მოხერხებული"
         greetingText.numberOfLines = 3
-        greetingText.font = UIFont(name: "Helvetica", size: 20)
+        greetingText.textAlignment = .center
+        greetingText.font = UIFont(name: "FiraGO-Regular", size: 16)
         greetingText.alpha = 0.6
-        greetingText.frame = CGRect(x: UIScreen.main.bounds.width / 5.09090909,
+        greetingText.frame = CGRect(x: (UIScreen.main.bounds.width / 2) - (UIScreen.main.bounds.width / 1.6 / 2),
                                     y: UIScreen.main.bounds.height / 2.4,
-                                    width: UIScreen.main.bounds.width / 1.59285,
+                                    width: UIScreen.main.bounds.width / 1.6,
                                     height: UIScreen.main.bounds.height / 10.583333)
         return greetingText
     }()
     private let loginButton: UIButton = {
         let loginButton = UIButton()
-        loginButton.setImage(UIImage(named: "signUpFree"), for: .normal)
+        loginButton.setImage(UIImage(named: "loginOrange"), for: .normal)
         loginButton.frame = CGRect(x: UIScreen.main.bounds.width / 35,
                                    y: UIScreen.main.bounds.height / 1.7095,
                                    width: UIScreen.main.bounds.width / 1.037,
                                    height: UIScreen.main.bounds.height / 12.78787)
-        loginButton.addTarget(self, action: #selector(registerButton), for: .touchUpInside)
+        loginButton.addTarget(self, action: #selector(loginPressed), for: .touchUpInside)
         return loginButton
     }()
     private let googleButton: GIDSignInButton = {
@@ -76,19 +77,19 @@ class loginViewController: UIViewController {
         return appleButton
         
     }()
-    private let signUp: UIButton = {
-       let signUp = UIButton()
-        signUp.setTitle("Already Have an Account ? Log in", for: .normal)
-        signUp.setTitle("Logging in", for: .highlighted)
-        signUp.titleLabel?.font = UIFont(name: "Helvetica", size: 12)
-        signUp.setTitleColor(.white, for: .normal)
-        signUp.frame = CGRect(x: UIScreen.main.bounds.width / 4.5,
-                              y: UIScreen.main.bounds.height / 1.113456,
-                              width: UIScreen.main.bounds.width / 1.8,
-                              height: UIScreen.main.bounds.height / 46.8888)
-        signUp.addTarget(self, action: #selector(loginPressed), for: .touchUpInside)
-        return signUp
-    }()
+//    private let signUp: UIButton = {
+//       let signUp = UIButton()
+//        signUp.setTitle("Already Have an Account ? Log in", for: .normal)
+//        signUp.setTitle("Logging in", for: .highlighted)
+//        signUp.titleLabel?.font = UIFont(name: "Helvetica", size: 12)
+//        signUp.setTitleColor(.white, for: .normal)
+//        signUp.frame = CGRect(x: UIScreen.main.bounds.width / 4.5,
+//                              y: UIScreen.main.bounds.height / 1.113456,
+//                              width: UIScreen.main.bounds.width / 1.8,
+//                              height: UIScreen.main.bounds.height / 46.8888)
+//        signUp.addTarget(self, action: #selector(loginPressed), for: .touchUpInside)
+//        return signUp
+//    }()
     private let backButton: UIButton = {
        let backButton = UIButton()
         backButton.setImage(UIImage(systemName: "arrow.backward"), for: .normal)
@@ -110,7 +111,7 @@ class loginViewController: UIViewController {
         view.addSubview(signUpLabel)
         view.addSubview(loginButton)
         view.addSubview(greetingText)
-        view.addSubview(signUp)
+//        view.addSubview(signUp)
         view.addSubview(appleButton)
         view.addSubview(googleButton)
         view.addSubview(backButton)
