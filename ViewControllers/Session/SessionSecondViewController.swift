@@ -9,8 +9,8 @@ import UIKit
 import Lottie
 
 class SessionSecondViewController: UIViewController {
-    var selectedRoot = rootController.problem
-//    var selectedRoot = rootController.problem1Session3
+//    var selectedRoot = rootController.problem
+    var selectedRoot = rootController.problem1Session2
     func enumUsability() {
         switch selectedRoot {
         case .problem:
